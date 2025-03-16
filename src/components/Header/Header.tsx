@@ -33,17 +33,12 @@ const Header = () => {
             </li>
             <li className="option" onClick={closeMobileMenu}>
               <NavLink to="/experience" activeClassName="active-link">
-                Detailed work experience
+                Work experience
               </NavLink>
             </li>
             <li className="option" onClick={closeMobileMenu}>
               <NavLink to="/portfolio" activeClassName="active-link">
                 Portfolio
-              </NavLink>
-            </li>
-            <li className="option" onClick={closeMobileMenu}>
-              <NavLink to="/game" activeClassName="active-link">
-                My game
               </NavLink>
             </li>
             <li className="option" onClick={closeMobileMenu}>

@@ -115,8 +115,8 @@ const Home = () => {
       </div>
       <div className="welcome-div">
         <h4>
-          Hi! <br />
-          If you wish to learn more about me click 
+          Hello there! <br />
+          Learn more about me by clicking 
           <b>
             <NavLink to="/about">
                   {" "}here
