@@ -47,7 +47,7 @@ const About = () => {
         <h3 className="about-title">About me</h3>
         <hr />
         <p className="about-introduction">
-          Hi there! My name is Krystian and I am a software engineer with a
+          Hi there! My name is Ula and I am a software engineer with a
           passion for creating efficient and innovative solutions. I am 25 years
           old and have had the opportunity to work as a full stack developer in
           a variety of settings. This experience has allowed me to become
