@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer-div">
       <a
-        href="https://www.linkedin.com/in/krystian-gołuch-6996aa128"
+        href="https://www.linkedin.com/in/urszula-handzlik/"
         target="_blank"
         rel="noreferrer"
       >

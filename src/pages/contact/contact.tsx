@@ -7,12 +7,12 @@ const Contact = () => {
       <h3 className="contact-title">Contact me</h3>
       <hr />
       <p>
-        You are always welcome to contact me if you have any questions. You can
+        Feel free to contact me anytime if you have any questions. You can
         reach out to me on:
         <ul>
           <li>
             <a
-              href="https://www.linkedin.com/in/krystian-gołuch-6996aa128"
+              href="https://www.linkedin.com/in/urszula-handzlik/"
               className="contact-linkedin bold-600"
               target="_blank"
               rel="noreferrer"
