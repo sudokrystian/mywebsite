@@ -16,7 +16,7 @@ const About = () => {
   const hobbiesSectionId = "hobbies-div";
 
   const skills: string[] = [
-    "Java",
+    "scrum",
     "ReactJS",
     "PHP",
     ".NET",
