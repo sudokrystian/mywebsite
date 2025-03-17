@@ -3,11 +3,11 @@ import Banner from "../../components/Banner/Banner";
 import SkillBox from "../../components/SkillBox/SkillBox";
 import "./about.scss";
 // Pictures
-import via from "../../assets/experience/via.png";
-import stibo from "../../assets/about/stibo_systems.png";
+import via from "../../assets/experience/agh_logo.png";
+import stibo from "../../assets/about/colliers_logo.png";
 import cern from "../../assets/experience/cern.png";
 import holme from "../../assets/experience/holmegroup.png";
-import maskinmesterskole from "../../assets/about/maskinmesterskole.png";
+import maskinmesterskole from "../../assets/about/v_logo.png";
 
 const About = () => {
   const experienceSectionId = "experience-div";
