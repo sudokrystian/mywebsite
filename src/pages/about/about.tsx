@@ -16,29 +16,20 @@ const About = () => {
   const hobbiesSectionId = "hobbies-div";
 
   const skills: string[] = [
-    "scrum",
-    "ReactJS",
-    "PHP",
-    ".NET",
-    "Python",
-    "Gradle plugins",
-    "JavaScript",
-    "JQuery",
-    "AngularJS",
+    "Organizational skills",
     "MySQL",
-    "PostgreSQL",
-    "Typescript",
-    "Jenkins",
-    "Android",
-    "Spring",
-    "Groovy",
-    "Kotlin",
-    "SCSS",
-    "Shell scripts",
-    "GIT",
-    "HTML",
-    "SOAP",
-    "Unity",
+    "Creativity",
+    "Logical thinking",
+    "Python",
+    "Quick learner",
+    "Power-BI",
+    "Tech-savvy",
+    "Timeliness",
+    "Responsibility",
+    "Scrum",
+    "MS Project",
+    "Microsoft Office",
+    "MATLAB",
   ];
 
   return (
@@ -47,20 +38,24 @@ const About = () => {
         <h3 className="about-title">About me</h3>
         <hr />
         <p className="about-introduction">
-          Hi there! My name is Ula and I am a software engineer with a
-          passion for creating efficient and innovative solutions. I am 25 years
-          old and have had the opportunity to work as a full stack developer in
-          a variety of settings. This experience has allowed me to become
-          comfortable with acquiring new skills and technologies in a short
-          amount of time. One of the things I enjoy most about being a software
-          engineer is the opportunity to work with a team to solve problems and
-          improve processes. I believe that collaboration is key to success, and
-          I always try to take the time to discuss different approaches and
-          solutions with my teammates. Linux is my favorite operating system,
-          but I also don't mind using Windows or MacOS. I believe there are no
-          unsolvable problems, only short deadlines. I am always up for a
-          challenge and strive to meet the expectations with the highest level
-          of quality in my work.
+          Hello there! My name is Ula and I am a dedicated and results-driven Project 
+          Coordinator with over two years of professional experience, primarily in civil 
+          engineering. My passion lies in managing people and projects efficiently, 
+          ensuring that every initiative I oversee meets its deadlines, stays within budget, 
+          and surpasses quality expectations. I thrive on fostering collaboration, 
+          driving team performance, and optimizing workflows to deliver successful outcomes. 
+          In addition to my strong people management skills, I am adept at leveraging 
+          technology to enhance productivity and streamline processes. From advanced 
+          Excel functions to industry-standard tools like AutoCAD, MATLAB, and MS Project, 
+          I ensure that projects run smoothly by integrating the right tools at the right time. 
+          I also use AI-driven solutions to improve efficiency and data-driven decision-making 
+          across tasks and teams. While my background is rooted in civil engineering, 
+          my skills in project coordination, resource management, and process optimization 
+          are highly transferable across industries. As I look to expand my career, 
+          I am excited about opportunities in the tech sector, where I can apply 
+          my experience in managing teams and delivering complex projects in a fast-paced, 
+          innovative environment. Let’s connect if you’re seeking a proactive 
+          project coordinator who excels at leading people and processes toward success.
         </p>
       </div>
       <Banner />
@@ -79,31 +74,22 @@ const About = () => {
           <div className="experience-job">
             <img src={stibo} alt="Stibo Systems" className="company-img" />
             <br />
-            <h5>Stibo Systems 08/2022 - now</h5>
-            <h6>Full Stack Software Engineer</h6>
+            <h5>Colliers Define 07/2022 - now</h5>
+            <h6>Project Coordinator</h6>
             <ul>
-              <li>Designing and implementing systems in Java</li>
-              <li>Maintaining and supporting legacy applications</li>
-              <li>OSGI service delivery</li>
+              <li>Supervision, verification and coordination of the works carried out</li>
+              <li>Defining project requirements based on customer input</li>
+              <li>Overseeing and validating ongoing tasks and deliverables</li>
             </ul>
           </div>
           <div className="experience-job">
             <img src={cern} alt="CERN" className="company-img" />
-            <h5>CERN 08/2020 - 09/2021</h5>
-            <h6>DevOps, System Design</h6>
+            <h5>Twój developer 07/2020 - 08/2021</h5>
+            <h6>Project Manager Assistant</h6>
             <ul>
-              <li>
-                Author of the new version of CBNG - custom Gradle based build
-                tool
-              </li>
-              <li>
-                One of the authors of Controls Artifact Service - Spring based
-                REST service
-              </li>
-              <li>
-                Support for existing applications build with Java, Groovy,
-                Kotlin, Bash scripts
-              </li>
+              <li>Early planning and implementation of several investments</li>
+              <li>Leadership and management of collaborative teams</li>
+              <li>Coordination of project workflows</li>
             </ul>
           </div>
           <div className="experience-job">
@@ -193,8 +179,11 @@ const About = () => {
               className="education-image"
             />
             <div className="education-header">
-              <h6>2018 - 2022</h6>
-              <p>ICT Software Engineering, VIA Horsens</p>
+              <h6>2018 - 2023</h6>
+              <p> 
+                Engineering and Management of Construction Projects, 
+                AGH University of Science and Technology
+              </p>
             </div>
             <ul>
               <li>System architecture</li>
@@ -209,13 +198,13 @@ const About = () => {
               className="education-image"
             />
             <div className="education-header">
-              <h6>2016-2018</h6>
-              <p>Automotive Technology, Erhvervsakademi Aarhus</p>
+              <h6>2015-2018</h6>
+              <p>Mathematical, Physics and IT, 5th High School</p>
             </div>
             <ul>
-              <li>ECU programming</li>
+              <li>Programming: C++, VBA</li>
               <li>Physics and Mathematics</li>
-              <li>Engine design</li>
+              <li>Management</li>
             </ul>
           </div>
           <div className="education-header"></div>
@@ -230,16 +219,13 @@ const About = () => {
           some of my favorite ones.
         </p>
         <ul>
-          <li>Playing ukulele</li>
-          <li>Fixing and riding my motorcycle</li>
+          <li>Learning new languages</li>
           <li>
-            Philosophy (I used to be the head of philosophy panel in VIA
-            Horsens)
+            Powerlifting (the best way to grow is by overcoming your weaknesses 
+            and embracing new opportunities)
           </li>
-          <li>
-            Guidance of young, passionate minds (I am a mentor for first
-            semester students)
-          </li>
+          <li>Psychology</li>
+          <li>Fantasy books</li>
           <li>
             Travelling (the main aim for my travels are beautiful hikes in
             nature and good food)
