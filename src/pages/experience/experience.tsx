@@ -38,24 +38,25 @@ const Experience = () => {
       <img src={stibo} alt="Stibo Systems" className="company-img" />
       <br />
       <br />
-      <h5>Sofware Enginner in Stibo Systems 08/2022 - now </h5>
+      <h5>Project Coordinator in Colliers Define 07/2022 - now </h5>
       <p>
-        As a full time software engineer in Stibo Sytems I was responsible for quite a few things.
-        Not only were we developing new features for the Data Management System being sold
-        by the company, but also we were maintaining legacy code from early 2000's.
-        Stibo is using variety of technologies which let me futher expand my skillset.    
+        As a Project Coordinator, I was responsible for overseeing and coordinating project
+        teams to ensure smooth execution. My role involved tracking budgets, managing scope
+        changes, and supervising ongoing tasks and deliverables. I also handled contract
+        adherence, invoicing, and payment processes while maintaining comprehensive project
+        documentation. Additionally, I worked closely with clients to define project
+        requirements and actively participated in contract negotiations.
       </p>
       <div className="jobskills">
         <ul>
-          <li>Java</li>
-          <li>GWT</li>
-          <li>Java Swing</li>
-          <li>Jenkins</li>
-          <li>Gradle</li>
-          <li>OSGI</li>
-          <li>React</li>
-          <li>Typescript</li>
-          <li>SVN</li>
+          <li>Organizational skills</li>
+          <li>Creativity</li>
+          <li>Logical thinking</li>
+          <li>Power-BI</li>
+          <li>Responsibility</li>
+          <li>Timeliness</li>
+          <li>Scrum</li>
+          <li>MS Project</li>
         </ul>
         <div className="job-skills-images">
           <img src={java} alt="Java" />
@@ -71,84 +72,37 @@ const Experience = () => {
       </div>
 
       <p>
-        Stibo Systems is an exciting place to work at. It deals with both new and old technologies, 
-        which forces engineers to keep their skillset updated, but also teaches them how to handle 
-        problems caused by legacy code. Stibo has a lot of custom solutions that are very complex
-        and require deep understanding of the inner workings of JVM and memory. In order to deal with
-        huge amount of data high level of memory optimization is required to makes user experience
-        as friendly as possible.
-      </p>
-      <hr className="experience-spacer" />
-      <br />
-      <img src={via} alt="Via Univeristy Collage" className="company-img" />
-      <h5>Student Instructor in VIA Horsens 09/2021 - 12/2021</h5>
-      <p>
-        I was a part time Java instructor in VIA Univeristy College. I have learned
-        quite a few things in my job:
-      </p>
-      <ul>
-        <li>
-          Inexperienced doesn't necessarily mean wrong. Young minds that aren't
-          tainted by our programming paradigms and everday object oriented
-          thinking managed to surprise me more than once. Sometimes my students
-          were teaching me instead. Although I was always considering myself as
-          a person who is able to think out of the box, I was proved that there
-          is still huge room for improvement for me.
-        </li>
-        <li>
-          We programmers tend to be too technical. I noticed how many problems in
-          my job as a developer could have been prevented if only we worked more
-          on our communication. Sometimes 5 more minutes of a conversation and
-          additional explanation of the same thing from another perspective can
-          save hours of time.
-        </li>
-      </ul>
-      <p>
-        Shaping young minds was extremely satisfying for me. I loved presenting
-        logical problems and hearing input from people with such a various
-        background. I was sharing my knowledge about the field with my students
-        and on every lesson I was reminding them how important is teamwork and
-        open mindness in our profession. I have ecnouraged them to work on their
-        own projects outside of the school curriculum, which resulted in quite
-        few passionate young game developers with a lot of potential.
-      </p>
-      <br />
-      <h5>Student Guard in VIA Horsens 08/2021 - now</h5>
-      <p>
-        I am a student guard in VIA Univeristy College. I am responsible for
-        helping students and external guests visiting our school. This job
-        allowed me to develop my people skills even further. Various backgrounds
-        and cultural differences tend to clash from time to time. Depending on
-        the approach it can result in conflict or in projects with a deep
-        insight thanks to different perspectives. Finding the best in people
-        taught me patience and appreciation of the differences in personalities.
+        Colliers Define is an exciting place to work, offering a dynamic environment
+        that blends strategic project management with real-world execution. Managing
+        projects here requires adaptability, as each initiative comes with unique
+        challenges in budgeting, scheduling, and workflow optimization. The role
+        demands a deep understanding of risk management and contract administration
+        to ensure smooth project delivery. With multiple teams and vendors involved,
+        strong communication and problem-solving skills are essential to keep projects
+        on track. The fast-paced nature of the work constantly pushes project coordinators
+        to refine their skills and stay ahead in the field of project management.
       </p>
       <hr className="experience-spacer" />
       <br />
       <img src={cern} alt="CERN" className="company-img" />
-      <h5>DevOps CERN 08/2020 - 09/2021</h5>
+      <h5>Project Manager Assistant in Twój developer 07/2020 - 08/2021</h5>
       <p>
-        As a part of DevOps team I was responsible for designing systems,
-        maintnance and support. I worked on many projects, but two of them -
-        CBNG and Controls Artifact Service - were my own "babies" that function
-        in CERN and the entire Beam Department is using them on everyday basis.
+        As a Project Manager Assistant at Twój Developer, I was responsible for early planning
+        and implementation of several investments, ensuring smooth project execution from
+        the initial stages. I played a key role in leading and managing collaborative teams,
+        fostering effective communication, and ensuring alignment with project goals. Additionally,
+        I coordinated project workflows, overseeing timelines, deliverables, and resource allocation
+        to support successful project completion.
       </p>
       <br />
-      <h6>
-        <b>CBNGv4</b>
-      </h6>
       <div className="jobskills">
         <ul>
-          <li>Java</li>
-          <li>Kotlin</li>
-          <li>Groovy</li>
-          <li>Custom Gradle distribution</li>
-          <li>Custom Gradle plugins</li>
-          <li>
-            XML specification reader (backwards compatibiltiy with old Maven
-            solutions)
-          </li>
-          <li>Jenkins and Jfrog integration</li>
+          <li>Quick learner</li>
+          <li>Timeliness</li>
+          <li>Scrum</li>
+          <li>MS Project</li>
+          <li>Microsoft Office</li>
+          <li>MATLAB</li>
         </ul>
         <div className="job-skills-images">
           <img src={java} alt="Java" />
@@ -161,62 +115,19 @@ const Experience = () => {
       </div>
 
       <p>
-        CommonBuild Next Generation is a custom gradle distribution that
-        provides the necessery tooling for developers in the CERN ecosystem. It
-        is configuring the entire project automatically to fit into the CERN
-        convention. It provides the tasks to deploy the application to various
-        servers in the internal network by simply calling a gradle task. Plugins
-        that provide this functionality make sure that the versioning and
-        documentation are in order, and then proceed to test the codebase and
-        deploy it to both Jfrog artifactory and the CERN Network File System. It
-        is a huge project, which focuses on extendability and ease of maintnance.
-        Thanks to separating functionalities into small plugins, developers
-        don't have to use the entire distirbution, but they can pick only the
-        desired plugins in order to keep their projects lightweight. The version
-        of CBNG that I have developed is based on the Gradle distirbution
-        version 7.
+        Twój Developer is a great place to start a career in project management, offering the
+        opportunity to gain hands-on experience in various aspects of real estate development.
+        Despite not being a large company, it provides a dynamic environment where you can learn
+        a wide range of skills, from early project planning to execution and team coordination.
       </p>
       <br />
-      <h6>
-        <b>Controls Artifact Service</b>
-      </h6>
-      <div className="jobskills">
-        <ul>
-          <li>Java</li>
-          <li>Spring Rest Service</li>
-          <li>Two-factor JWT authentication</li>
-          <li>Optimized JPA Entity Graph queries</li>
-          <li>Angular</li>
-        </ul>
-        <div className="job-skills-images">
-          <img src={java} alt="Java" />
-          <img src={gradle} alt="Gradle" />
-          <img src={spring} alt="Spring" />
-          <img src={jpa} alt="JPA" />
-          <img src={jwt} alt="JWT" />
-          <img src={angular} alt="Angular" />
-          <img src={typescript} alt="Typescript" />
-          <img src={scss} alt="Scss" />
-          <img src={react} alt="react" />
-        </div>
-      </div>
-
       <p>
-        CAS is a tool for custom CERN versioning. In CERN instead of using a
-        specific version of the dependency, like f.e. "4.2.1", aliases are used
-        instead. The most common is called "PRO", which stands for the most
-        stable new version of the dependency. When people specify their
-        dependencies in Gradle or Maven project, CBNG calls CAS to resolve the
-        alias into the actual version. This solution makes DevOps much more
-        prepared for emergencies, since any dependency conflicts are easily
-        resolved by marking a new version as PRO instead. Thanks to that the
-        downtime is minimalized in case of any updates, and the operators always
-        have a fallback version. Since some applications have thousands of
-        dependencies, the main focus was reliability and speed. JPA Entity Graph
-        proved to be an incredibly powerful tool for connecting with the
-        database. As a frontend for the services, me and my team created an
-        Angular app that allows to modify aliases at real time for people with
-        administrative rights.
+        Working in this fast-paced setting pushed me to sharpen my time management and adaptability,
+        enabling me to quickly master new tools and methodologies. I embraced agile techniques—especially
+        Scrum—to boost team collaboration and enhance project outcomes. I relied on MS Project for precise
+        scheduling and resource management, while using Microsoft Office for thorough documentation
+        and reporting. Moreover, I expanded my analytical capabilities through MATLAB, which I used to
+        refine processes and drive data-based decision-making.
       </p>
       <hr className="experience-spacer" />
       <br />
