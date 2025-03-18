@@ -3,11 +3,11 @@ import Banner from "../../components/Banner/Banner";
 import SkillBox from "../../components/SkillBox/SkillBox";
 import "./about.scss";
 // Pictures
-import via from "../../assets/experience/agh_logo.png";
-import stibo from "../../assets/about/colliers_logo.png";
+import agh from "../../assets/experience/agh_logo.png";
+import colliers from "../../assets/experience/colliers_logo.png";
 import cern from "../../assets/experience/cern.png";
 import holme from "../../assets/experience/holmegroup.png";
-import maskinmesterskole from "../../assets/about/v_logo.png";
+import maskinmesterskole from "../../assets/experience/v_logo.png";
 
 const About = () => {
   const experienceSectionId = "experience-div";
@@ -38,24 +38,14 @@ const About = () => {
         <h3 className="about-title">About me</h3>
         <hr />
         <p className="about-introduction">
-          Hello there! My name is Ula and I am a dedicated and results-driven Project 
-          Coordinator with over two years of professional experience, primarily in civil 
-          engineering. My passion lies in managing people and projects efficiently, 
-          ensuring that every initiative I oversee meets its deadlines, stays within budget, 
-          and surpasses quality expectations. I thrive on fostering collaboration, 
-          driving team performance, and optimizing workflows to deliver successful outcomes. 
-          In addition to my strong people management skills, I am adept at leveraging 
-          technology to enhance productivity and streamline processes. From advanced 
-          Excel functions to industry-standard tools like AutoCAD, MATLAB, and MS Project, 
-          I ensure that projects run smoothly by integrating the right tools at the right time. 
-          I also use AI-driven solutions to improve efficiency and data-driven decision-making 
-          across tasks and teams. While my background is rooted in civil engineering, 
-          my skills in project coordination, resource management, and process optimization 
-          are highly transferable across industries. As I look to expand my career, 
-          I am excited about opportunities in the tech sector, where I can apply 
-          my experience in managing teams and delivering complex projects in a fast-paced, 
-          innovative environment. Let’s connect if you’re seeking a proactive 
-          project coordinator who excels at leading people and processes toward success.
+        Hello there, I'm Ula—a proactive Project Coordinator with over two years of 
+        experience driving complex projects. With a strong foundation in civil engineering, 
+        I've honed my skills in resource management, workflow optimization, and technology 
+        integration using tools like advanced Excel, AutoCAD, MATLAB, and MS Project. 
+        I also leverage AI-driven solutions to enhance efficiency and enable data-driven 
+        decision-making. With a proven track record of delivering projects on time and 
+        within budget while fostering team collaboration, I'm open to IT opportunities 
+        that allow me to apply my tech-savvy leadership and project management expertise. Let's connect if you're interested in a dynamic coordinator who can drive project success in a fast-paced, innovative environment.
         </p>
       </div>
       <Banner />
@@ -72,7 +62,7 @@ const About = () => {
         <br />
         <div className="experience-jobs">
           <div className="experience-job">
-            <img src={stibo} alt="Stibo Systems" className="company-img" />
+            <img src={colliers} alt="Colliers Define" className="company-img" />
             <br />
             <h5>Colliers Define 07/2022 - now</h5>
             <h6>Project Coordinator</h6>
@@ -83,25 +73,36 @@ const About = () => {
             </ul>
           </div>
           <div className="experience-job">
-            <img src={cern} alt="CERN" className="company-img" />
+            <img src={cern} alt="Twój developer" className="company-img" />
             <h5>Twój developer 07/2020 - 08/2021</h5>
             <h6>Project Manager Assistant</h6>
             <ul>
               <li>Early planning and implementation of several investments</li>
               <li>Leadership and management of collaborative teams</li>
-              <li>Coordination of project workflows</li>
+              <li>Coordination of project workflows (f.e.
+                <a
+                  href="https://www.facebook.com/NaWzgorzuJaworzno/"
+                  id="fashiongirl-link"
+                  className="bold-600"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  Na Wzgórzu){" "}
+                </a>
+              </li>
             </ul>
           </div>
           <div className="experience-job">
-            <img src={holme} alt="Holme Group" className="company-img" />
-            <h5>Holme Gruppen ASP 04/2019 - 08/2020</h5>
-            <h6>Full Stack web developer, System Design</h6>
+            <img src={holme} alt="Freelancing" className="company-img" />
+            <h5>Freelancing / - now</h5>
+            <h6>Project Manager</h6>
             <ul>
               <li>
                 Maintnance and further development of the old systems with PHP
                 5.3 (f.e.
                 <a
-                  href="https://fashiongirl24.de/"
+                  href="https://www.facebook.com/NaWzgorzuJaworzno/"
                   id="fashiongirl-link"
                   className="bold-600"
                   target="_blank"
@@ -174,14 +175,14 @@ const About = () => {
         <div className="education-containers">
           <div className="education-container">
             <img
-              src={via}
+              src={agh}
               alt="VIA Univesity Collage"
               className="education-image"
             />
             <div className="education-header">
               <h6>2018 - 2023</h6>
-              <p> 
-                Engineering and Management of Construction Projects, 
+              <p>
+                Engineering and Management of Construction Projects,
                 AGH University of Science and Technology
               </p>
             </div>
@@ -221,7 +222,7 @@ const About = () => {
         <ul>
           <li>Learning new languages</li>
           <li>
-            Powerlifting (the best way to grow is by overcoming your weaknesses 
+            Powerlifting (the best way to grow is by overcoming your weaknesses
             and embracing new opportunities)
           </li>
           <li>Psychology</li>

@@ -1,6 +1,6 @@
 import "./experience.scss";
 // Workplace logos
-import stibo from "../../assets/about/colliers_logo.png";
+import stibo from "../../assets/experience/colliers_logo.png";
 import via from "../../assets/experience/via.png";
 import cern from "../../assets/experience/cern.png";
 import holme from "../../assets/experience/holmegroup.png";
