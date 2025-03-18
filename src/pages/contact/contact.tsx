@@ -23,17 +23,6 @@ const Contact = () => {
           </li>
           <li>
             <a
-              href="https://wa.me/4591980198"
-              className="contact-whatsapp bold-600"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              WhatsApp
-            </a>{" "}
-          </li>
-          <li>
-            <a
               href="https://m.me/sudokrystian"
               className="contact-messenger bold-600"
               target="_blank"
