@@ -6,7 +6,6 @@ import Portfolio from "./pages/portfolio/portfolio";
 import Contact from "./pages/contact/contact";
 import Project from "./pages/project/project";
 import Error from "./pages/error/error";
-import Game from "./pages/game/game";
 
 const RouterConfig = () => {
   return (
@@ -25,9 +24,6 @@ const RouterConfig = () => {
       </Route>
       <Route exact path="/contact">
         <Contact />
-      </Route>
-      <Route exact path="/game">
-        <Game />
       </Route>
       <Route exact path="/project" component={Project}/>
       <Route>
