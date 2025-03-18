@@ -39,25 +39,35 @@ const About = () => {
         <h3 className="about-title">About me</h3>
         <hr />
         <p className="about-introduction">
-        Hello there, I'm Ula—a proactive Project Coordinator with over two years of 
-        experience driving complex projects. With a strong foundation in civil engineering, 
-        I've honed my skills in resource management, workflow optimization, and technology 
-        integration using tools like advanced Excel, AutoCAD, MATLAB, and MS Project. 
-        I also leverage AI-driven solutions to enhance efficiency and enable data-driven 
-        decision-making. With a proven track record of delivering projects on time and 
-        within budget while fostering team collaboration, I'm open to IT opportunities 
-        that allow me to apply my tech-savvy leadership and project management expertise. Let's connect if you're interested in a dynamic coordinator who can drive project success in a fast-paced, innovative environment.
+          Hello there, I'm Ula—a proactive Project Coordinator with over two years of
+          experience driving complex projects. With a strong foundation in civil engineering,
+          I've honed my skills in resource management, workflow optimization, and technology
+          integration using tools like advanced Excel, AutoCAD, MATLAB, and MS Project.
+          I also leverage AI-driven solutions to enhance efficiency and enable data-driven
+          decision-making. With a proven track record of delivering projects on time and
+          within budget while fostering team collaboration, I'm open to IT opportunities
+          that allow me to apply my tech-savvy leadership and project management expertise. Let's connect if you're interested in a dynamic coordinator who can drive project success in a fast-paced, innovative environment.
         </p>
       </div>
       <Banner />
       <AboutMeBox
-        experienceSectionId={experienceSectionId}
-        languagesSectionId={languagesSectionId}
         skillsSectionId={skillsSectionId}
+        languagesSectionId={languagesSectionId}
+        experienceSectionId={experienceSectionId}
         educationSectionId={educationSectionId}
         hobbiesSectionId={hobbiesSectionId}
       />
       <br />
+      <div id="skills-div">
+        <h3>Skills</h3>
+        <hr />
+        <br />
+        <div className="skillboxes-div">
+          {skills.map((skill) => (
+            <SkillBox boxText={skill} key={skill} />
+          ))}
+        </div>
+      </div>
       <div id="experience-div">
         <h3>Experience</h3>
         <hr />
@@ -160,15 +170,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div id="skills-div">
-        <h3>Skills</h3>
+      <div id="languages-div">
+        <h3>Languages</h3>
         <hr />
         <br />
-        <div className="skillboxes-div">
-          {skills.map((skill) => (
-            <SkillBox boxText={skill} key={skill} />
-          ))}
-        </div>
       </div>
       <br />
       <div id="education-div">
