@@ -11,6 +11,7 @@ import maskinmesterskole from "../../assets/experience/v_logo.png";
 
 const About = () => {
   const experienceSectionId = "experience-div";
+  const languagesSectionId = "languages-div";
   const skillsSectionId = "skills-div";
   const educationSectionId = "education-div";
   const hobbiesSectionId = "hobbies-div";
@@ -51,6 +52,7 @@ const About = () => {
       <Banner />
       <AboutMeBox
         experienceSectionId={experienceSectionId}
+        languagesSectionId={languagesSectionId}
         skillsSectionId={skillsSectionId}
         educationSectionId={educationSectionId}
         hobbiesSectionId={hobbiesSectionId}
