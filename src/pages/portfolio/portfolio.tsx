@@ -8,9 +8,7 @@ const Portfolio = () => {
       <h3 className="portfolio-title">My projects</h3>
       <hr />
       <div className="portfolio-projects">
-        {projects.map((value, index) => {
-          return <ProjectCard projectIndex={index} key={index}/>;
-        })}
+        
       </div>
     </div>
   );
