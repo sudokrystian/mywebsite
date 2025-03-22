@@ -23,7 +23,7 @@ const Contact = () => {
           </li>
           <li>
             <a
-              href="https://m.me/sudokrystian"
+              href="https://m.me/ula.handzlik"
               className="contact-messenger bold-600"
               target="_blank"
               rel="noreferrer"
@@ -32,6 +32,7 @@ const Contact = () => {
               Messenger{" "}
             </a>
           </li>
+          
         </ul>
         I will get back to you as soon as possible.
       </p>

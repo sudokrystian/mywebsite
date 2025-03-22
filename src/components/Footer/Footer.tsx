@@ -11,25 +11,25 @@ const Footer = () => {
       >
         <i className="fab fa-linkedin footer-icon"></i>
       </a>
-      <a href="https://wa.me/4591980198" target="_blank" rel="noreferrer">
+      <a href="https://m.me/ula.handzlik" target="_blank" rel="noreferrer">
         <i className="fab fa-whatsapp-square footer-icon"></i>
       </a>
       <a
-        href="https://facebook.com/sudokrystian"
+        href="https://m.me/ula.handzlik"
         target="_blank"
         rel="noreferrer"
       >
         <i className="fab fa-facebook-square footer-icon"></i>
       </a>
       <a
-        href="https://github.com/sudokrystian"
+        href="https://github.com/Ulszka"
         target="_blank"
         rel="noreferrer"
       >
         <i className="fab fa-brands fa-github-square footer-icon"></i>
       </a>
       <a
-        href="https://gitlab.com/sudokrystian/"
+        href="https://gitlab.com/Ulszka/"
         target="_blank"
         rel="noreferrer"
       >
