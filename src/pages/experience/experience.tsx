@@ -1,9 +1,8 @@
 import "./experience.scss";
 // Workplace logos
-import stibo from "../../assets/experience/colliers_logo.png";
-import via from "../../assets/experience/via.png";
-import cern from "../../assets/experience/cern.png";
-import holme from "../../assets/experience/holmegroup.png";
+import colliers from "../../assets/experience/colliers_logo.png";
+import twojDev from "../../assets/experience/twoj_developer.png";
+import freelancing from "../../assets/experience/freelancing.png";
 // Technologies images
 import java from "../../assets/experience/technologies/java.png";
 import swing from "../../assets/experience/technologies/swing.png";
@@ -35,7 +34,7 @@ const Experience = () => {
     <div className="experience-div">
       <h3 className="experience-title">My experience</h3>
       <hr />
-      <img src={stibo} alt="Stibo Systems" className="company-img" />
+      <img src={colliers} alt="Stibo Systems" className="company-img" />
       <br />
       <br />
       <h5>Project Coordinator in Colliers Define 07/2022 - now </h5>
@@ -84,7 +83,7 @@ const Experience = () => {
       </p>
       <hr className="experience-spacer" />
       <br />
-      <img src={cern} alt="CERN" className="company-img" />
+      <img src={twojDev} alt="CERN" className="company-img" />
       <h5>Project Manager Assistant in Twój developer 07/2020 - 08/2021</h5>
       <p>
         As a Project Manager Assistant at Twój Developer, I was responsible for early planning
@@ -131,7 +130,7 @@ const Experience = () => {
       </p>
       <hr className="experience-spacer" />
       <br />
-      <img src={holme} alt="Holme Group" className="company-img" />
+      <img src={freelancing} alt="Holme Group" className="company-img" />
       <h5>Web developer Holme Gruppen ASP 04/2019 - 08/2020</h5>
       <p>
         As most of the developers I have kicked-off my career with web

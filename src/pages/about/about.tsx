@@ -5,9 +5,9 @@ import "./about.scss";
 // Pictures
 import agh from "../../assets/experience/agh_logo.png";
 import colliers from "../../assets/experience/colliers_logo.png";
-import cern from "../../assets/experience/cern.png";
-import holme from "../../assets/experience/holmegroup.png";
-import maskinmesterskole from "../../assets/experience/v_logo.png";
+import twojDev from "../../assets/experience/twoj_developer.png";
+import freelancing from "../../assets/experience/freelancing.png";
+import vlo from "../../assets/experience/v_logo.png";
 
 const About = () => {
   const experienceSectionId = "experience-div";
@@ -85,7 +85,7 @@ const About = () => {
             </ul>
           </div>
           <div className="experience-job">
-            <img src={cern} alt="Twój developer" className="company-img" />
+            <img src={twojDev} alt="Twój developer" className="company-img" />
             <h5>Twój developer 07/2020 - 08/2021</h5>
             <h6>Project Manager Assistant</h6>
             <ul>
@@ -106,66 +106,11 @@ const About = () => {
             </ul>
           </div>
           <div className="experience-job">
-            <img src={holme} alt="Freelancing" className="company-img" />
+            <img src={freelancing} alt="Freelancing" className="company-img" />
             <h5>Freelancing / - now</h5>
             <h6>Project Manager</h6>
             <ul>
-              <li>
-                Maintnance and further development of the old systems with PHP
-                5.3 (f.e.
-                <a
-                  href="https://www.facebook.com/NaWzgorzuJaworzno/"
-                  id="fashiongirl-link"
-                  className="bold-600"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {" "}
-                  Fashion Girl,{" "}
-                </a>
-                <a
-                  href="https://lookperfect.dk/"
-                  id="lookperfect-link"
-                  className="bold-600"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {" "}
-                  Look perfect
-                </a>
-                )
-              </li>
-              <li>
-                Creating automated systems for providing loans and verifying
-                status in RKI in cooperation with ExpressBank and Basisbank
-                (f.e.
-                <a
-                  href="https://www.unolaan.dk"
-                  id="unolaan-link"
-                  className="bold-600"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {" "}
-                  Unolaan
-                </a>
-                ,
-                <a
-                  href="https://www.vialaan.dk"
-                  id="vialaan-link"
-                  className="bold-600"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {" "}
-                  Vialaan
-                </a>
-                )
-              </li>
-              <li>
-                Writing custom plugins for WordPress and PrestaShop with PHP 7
-              </li>
-              <li>Designing and implementing websites</li>
+              
             </ul>
           </div>
         </div>
@@ -194,14 +139,12 @@ const About = () => {
               </p>
             </div>
             <ul>
-              <li>System architecture</li>
-              <li>Agile driven development</li>
-              <li>Full-stack Software Engineering</li>
+              
             </ul>
           </div>
           <div className="education-container">
             <img
-              src={maskinmesterskole}
+              src={vlo}
               alt="Maskinmesterskole"
               className="education-image"
             />

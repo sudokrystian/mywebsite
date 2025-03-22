@@ -13,7 +13,7 @@ const Home = () => {
           params={{
             particles: {
               number: {
-                value: 80,
+                value: 70,
                 density: {
                   enable: true,
                   value_area: 1803.4120608655228,
@@ -26,7 +26,7 @@ const Home = () => {
                 type: "circle",
                 stroke: {
                   width: 10,
-                  color: "#36618d",
+                  color: "#668F80",
                 },
               },
               opacity: {
@@ -52,8 +52,8 @@ const Home = () => {
               links: {
                 enable: true,
                 distance: 200,
-                color: "#000000",
-                opacity: 0.5,
+                color: "#eee7e1",
+                opacity: 0.9,
                 width: 1,
               },
               move: {
