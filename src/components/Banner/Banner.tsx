@@ -1,19 +1,19 @@
 import { useState } from "react";
-import helmet from "../../assets/my_pictures/helmet_CERN-min.jpg";
-import whiteboard from "../../assets/my_pictures/white_board_CERN-min.jpg";
-import reception from "../../assets/my_pictures/reception_cropped-min.jpg";
-import coding from "../../assets/my_pictures/coding_cropped-min.jpg";
-import peace from "../../assets/my_pictures/peace_CERN-min.jpg";
+import happy from "../../assets/my_pictures/chosen/happy.jpg";
+import mountain from "../../assets/my_pictures/chosen/mountain.jpg";
+import angry from "../../assets/my_pictures/chosen/angry.jpg";
+import shock from "../../assets/my_pictures/chosen/shock.jpg";
+import rocks from "../../assets/my_pictures/chosen/rocks.jpg";
 import "./Banner.scss";
 
 const Banner = () => {
-  const pictures: string[] = [reception, whiteboard, coding, helmet, peace];
+  const pictures: string[] = [happy, mountain, angry, shock, rocks];
   const traits: string[] = [
-    "friendly",
-    "creative",
-    "hard-working",
-    "headstrong",
-    "communicative"
+    "new project starts",
+    "difficulties show up",
+    "work doesn't get done",
+    "project turns out to be bigger than expected",
+    "it's time to show results of team work"
   ];
 
   const [index, setIndex] = useState<number>(0);
@@ -51,7 +51,7 @@ const Banner = () => {
           </div>
         </div>
         <p className="banner-text">
-          If I would have to describe myself I guess I would use the word{" "}
+          Me when {" "}
           <b>{traits[index]}</b>
         </p>
       </div>

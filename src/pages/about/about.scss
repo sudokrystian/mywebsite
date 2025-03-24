@@ -20,14 +20,16 @@ $vialaan-color: #3498dB;
       padding: $padding-about $padding-sides-mobile;
 
     }
+
     @media (min-width: 649px) {
       padding: $padding-about $padding-sides;
     }
   }
 
   #experience-div {
-    
-    h5, h6 {
+
+    h5,
+    h6 {
       font-weight: bolder;
     }
 
@@ -35,6 +37,7 @@ $vialaan-color: #3498dB;
       padding: 0 $padding-sides-mobile;
 
     }
+
     @media (min-width: 649px) {
       padding: 0 $padding-sides;
     }
@@ -71,18 +74,21 @@ $vialaan-color: #3498dB;
     #fashiongirl-link {
       color: $fashion-girl-color;
     }
+
     #lookperfect-link {
       color: $look-perfect-color;
     }
+
     #unolaan-link {
       color: $unolaan-color;
     }
+
     #vialaan-link {
       color: $vialaan-color;
     }
 
     h6 {
-        font-size: 18px;
+      font-size: 18px;
     }
   }
 
@@ -90,13 +96,19 @@ $vialaan-color: #3498dB;
     @media (max-width: 648px) {
       padding: 0px $padding-sides-mobile;
     }
+
     @media (min-width: 649px) {
       padding: 0px $padding-sides;
-  
+
+    }
+
+    .skillbox-div {
+      display: flex;
+      flex-direction: row;
     }
 
     .skillboxes-div {
-      width: 100%;
+      width: 50%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -108,9 +120,10 @@ $vialaan-color: #3498dB;
     @media (max-width: 648px) {
       padding: 0px $padding-sides-mobile;
     }
+
     @media (min-width: 649px) {
       padding: 0px $padding-sides;
-  
+
     }
   }
 
@@ -118,6 +131,7 @@ $vialaan-color: #3498dB;
     @media (max-width: 648px) {
       padding: 0 $padding-sides-mobile;
     }
+
     @media (min-width: 649px) {
       padding: 0 $padding-sides;
     }
@@ -170,6 +184,7 @@ $vialaan-color: #3498dB;
     @media (max-width: 648px) {
       padding: 0px $padding-sides-mobile;
     }
+
     @media (min-width: 649px) {
       padding: 0px $padding-sides;
     }

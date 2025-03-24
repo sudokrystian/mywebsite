@@ -32,7 +32,19 @@ const Contact = () => {
               Messenger{" "}
             </a>
           </li>
-          
+          {/*
+          <li>
+            <a
+              href="https://m.me/ula.handzlik"
+              className="contact-whatsapp bold-600"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              WhatsApp{" "}
+            </a>
+          </li>
+          */}
         </ul>
         I will get back to you as soon as possible.
       </p>

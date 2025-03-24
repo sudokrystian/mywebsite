@@ -17,20 +17,22 @@ const About = () => {
   const hobbiesSectionId = "hobbies-div";
 
   const skills: string[] = [
-    "Organizational skills",
     "MySQL",
-    "Creativity",
-    "Logical thinking",
     "Python",
-    "Quick learner",
     "Power-BI",
-    "Tech-savvy",
-    "Timeliness",
-    "Responsibility",
     "Scrum",
     "MS Project",
     "Microsoft Office",
     "MATLAB",
+  ];
+  const softSkills: string[] = [
+    "Organizational skills",
+    "Creativity",
+    "Logical thinking",
+    "Quick learner",
+    "Tech-savvy",
+    "Timeliness",
+    "Responsibility",
   ];
 
   return (
@@ -62,11 +64,21 @@ const About = () => {
         <h3>Skills</h3>
         <hr />
         <br />
-        <div className="skillboxes-div">
-          {skills.map((skill) => (
-            <SkillBox boxText={skill} key={skill} />
-          ))}
+
+        <div className="skillbox-div">
+          <div className="skillboxes-div">
+            {skills.map((skill) => (
+              <SkillBox boxText={skill} key={skill} />
+            ))}
+
+          </div>
+          <div className="skillboxes-div">
+            {softSkills.map((skill) => (
+              <SkillBox boxText={skill} key={skill} />
+            ))}
+          </div>
         </div>
+
       </div>
       <div id="experience-div">
         <h3>Experience</h3>
@@ -110,7 +122,7 @@ const About = () => {
             <h5>Freelancing / - now</h5>
             <h6>Project Manager</h6>
             <ul>
-              
+
             </ul>
           </div>
         </div>
@@ -139,7 +151,7 @@ const About = () => {
               </p>
             </div>
             <ul>
-              
+
             </ul>
           </div>
           <div className="education-container">
