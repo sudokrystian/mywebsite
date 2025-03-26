@@ -1,11 +1,7 @@
 $padding-about: 15px;
 $padding-sides: 100px;
 $padding-sides-mobile: 20px;
-$hr-color: #616161;
-$fashion-girl-color: #f00088;
-$look-perfect-color: #4fc4c7;
-$unolaan-color: #1c9d9b;
-$vialaan-color: #3498dB;
+$na-wzgorzu-color: #668F80;
 
 .about-div {
   padding: 70px 0;
@@ -71,20 +67,8 @@ $vialaan-color: #3498dB;
       font-weight: 600;
     }
 
-    #fashiongirl-link {
-      color: $fashion-girl-color;
-    }
-
-    #lookperfect-link {
-      color: $look-perfect-color;
-    }
-
-    #unolaan-link {
-      color: $unolaan-color;
-    }
-
-    #vialaan-link {
-      color: $vialaan-color;
+    #nawzgorzu-link {
+      color: $na-wzgorzu-color;
     }
 
     h6 {

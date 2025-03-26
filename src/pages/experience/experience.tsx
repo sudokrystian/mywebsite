@@ -1,6 +1,6 @@
 import "./experience.scss";
 // Workplace logos
-import colliers from "../../assets/experience/colliers_logo.png";
+import colliers from "../../assets/experience/colliers_logo_clean.png";
 import twojDev from "../../assets/experience/twoj_developer.png";
 import freelancing from "../../assets/experience/freelancing.png";
 // Technologies images
@@ -11,9 +11,6 @@ import groovy from "../../assets/experience/technologies/groovy.png";
 import gradle from "../../assets/experience/technologies/gradle.png";
 import jenkins from "../../assets/experience/technologies/jenkins.png";
 import maven from "../../assets/experience/technologies/maven.png";
-import spring from "../../assets/experience/technologies/spring.png";
-import jpa from "../../assets/experience/technologies/jpa.png";
-import jwt from "../../assets/experience/technologies/jwt.png";
 import net from "../../assets/experience/technologies/.NET.png";
 import python from "../../assets/experience/technologies/python.png";
 import react from "../../assets/experience/technologies/react.png";

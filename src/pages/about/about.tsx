@@ -1,10 +1,9 @@
-import AboutMeBox from "../../components/AboutMeBoxes/AboutMeBox";
 import Banner from "../../components/Banner/Banner";
 import SkillBox from "../../components/SkillBox/SkillBox";
 import "./about.scss";
 // Pictures
 import agh from "../../assets/experience/agh_logo.png";
-import colliers from "../../assets/experience/colliers_logo.png";
+import colliers from "../../assets/experience/colliers_logo_clean.png";
 import twojDev from "../../assets/experience/twoj_developer.png";
 import freelancing from "../../assets/experience/freelancing.png";
 import vlo from "../../assets/experience/v_logo.png";
@@ -52,18 +51,23 @@ const About = () => {
         </p>
       </div>
       <Banner />
-      <AboutMeBox
-        skillsSectionId={skillsSectionId}
-        languagesSectionId={languagesSectionId}
-        experienceSectionId={experienceSectionId}
-        educationSectionId={educationSectionId}
-        hobbiesSectionId={hobbiesSectionId}
-      />
+
       <br />
       <div id="skills-div">
         <h3>Skills</h3>
         <hr />
         <br />
+
+        <div className="skillbox-div">
+          <div className="skillboxes-div">
+            <h3>Hard skills</h3>
+          </div>
+          <div className="skillboxes-div">
+            <h3>Soft skills</h3>
+          </div>
+
+
+        </div>
 
         <div className="skillbox-div">
           <div className="skillboxes-div">
@@ -106,7 +110,7 @@ const About = () => {
               <li>Coordination of project workflows (f.e.
                 <a
                   href="https://www.facebook.com/NaWzgorzuJaworzno/"
-                  id="fashiongirl-link"
+                  id="nawzgorzu-link"
                   className="bold-600"
                   target="_blank"
                   rel="noreferrer"
