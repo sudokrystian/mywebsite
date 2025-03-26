@@ -57,29 +57,26 @@ const About = () => {
         <h3>Skills</h3>
         <hr />
         <br />
-
         <div className="skillbox-div">
-          <div className="skillboxes-div">
-            <h3>Hard skills</h3>
+          <div className="skillstext-div">
+            <div className="skillboxes-div">
+              <h3>Hard skills</h3>
+            </div>
+            <div className="skillboxes-div">
+              {skills.map((skill) => (
+                <SkillBox boxText={skill} key={skill} />
+              ))}
+            </div>
           </div>
-          <div className="skillboxes-div">
-            <h3>Soft skills</h3>
-          </div>
-
-
-        </div>
-
-        <div className="skillbox-div">
-          <div className="skillboxes-div">
-            {skills.map((skill) => (
-              <SkillBox boxText={skill} key={skill} />
-            ))}
-
-          </div>
-          <div className="skillboxes-div">
-            {softSkills.map((skill) => (
-              <SkillBox boxText={skill} key={skill} />
-            ))}
+          <div className="skillstext-div">
+            <div className="skillboxes-div">
+              <h3>Soft skills</h3>
+            </div>
+            <div className="skillboxes-div">
+              {softSkills.map((skill) => (
+                <SkillBox boxText={skill} key={skill} />
+              ))}
+            </div>
           </div>
         </div>
 

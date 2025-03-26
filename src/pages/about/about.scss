@@ -89,10 +89,17 @@ $na-wzgorzu-color: #668F80;
     .skillbox-div {
       display: flex;
       flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .skillstext-div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .skillboxes-div {
-      width: 50%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
