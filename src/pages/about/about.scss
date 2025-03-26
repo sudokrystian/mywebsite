@@ -116,6 +116,11 @@ $na-wzgorzu-color: #668F80;
       padding: 0px $padding-sides;
 
     }
+    .languagesbox-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
   }
 
   #education-div {

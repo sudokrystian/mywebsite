@@ -128,11 +128,24 @@ const About = () => {
           </div>
         </div>
       </div>
+
+
+
       <div id="languages-div">
         <h3>Languages</h3>
         <hr />
         <br />
+        <div className="languagesbox-div">
+          <p>Polish</p>
+          <p>English</p>
+          <p>German</p>
+          <p>Italian</p>   
+        </div>
       </div>
+
+
+
+      
       <br />
       <div id="education-div">
         <h3>Education</h3>
