@@ -2,6 +2,10 @@ $padding-about: 15px;
 $padding-sides: 100px;
 $padding-sides-mobile: 20px;
 $na-wzgorzu-color: #668F80;
+$lang-height: 100%;
+$lang-background-color: #668F80;
+$lang-padding: 5px;
+$lang-color: #fff;
 
 .about-div {
   padding: 70px 0;
@@ -116,11 +120,54 @@ $na-wzgorzu-color: #668F80;
       padding: 0px $padding-sides;
 
     }
+
     .languagesbox-div {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
     }
+
+    .languagesmax-div {
+      height: 50px;
+      width: 100%;
+      border-style: solid;
+      border-color: #668F80;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .languagePolish-div {
+      width: 100%;
+      height: $lang-height;
+      background-color: $lang-background-color;
+      padding: $lang-padding;
+      color: $lang-color;
+    }
+
+    .languageEnglish-div {
+      width: 83%;
+      height: $lang-height;
+      background-color: $lang-background-color;
+      padding: $lang-padding;
+      color: $lang-color;
+    }
+
+    .languageGerman-div {
+      width: 25%;
+      height: $lang-height;
+      background-color: $lang-background-color;
+      padding: $lang-padding;
+      color: $lang-color;
+    }
+
+    .languageItalian-div {
+      width: 17%;
+      height: $lang-height;
+      background-color: $lang-background-color;
+      padding: $lang-padding;
+      color: $lang-color;
+    }
+
   }
 
   #education-div {

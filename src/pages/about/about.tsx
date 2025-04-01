@@ -5,7 +5,7 @@ import "./about.scss";
 import agh from "../../assets/experience/agh_logo.png";
 import colliers from "../../assets/experience/colliers_logo_clean.png";
 import twojDev from "../../assets/experience/twoj_developer.png";
-import freelancing from "../../assets/experience/freelancing.png";
+import freelancing from "../../assets/experience/freelancing_women.avif";
 import vlo from "../../assets/experience/v_logo.png";
 
 const About = () => {
@@ -120,32 +120,43 @@ const About = () => {
           </div>
           <div className="experience-job">
             <img src={freelancing} alt="Freelancing" className="company-img" />
-            <h5>Freelancing / - now</h5>
+            <h5>Freelancing 04/2022 - now</h5>
             <h6>Project Manager</h6>
             <ul>
-
+              <li>Planning and overseeing IT project execution</li>
+              <li>Coordinating teams and resolving technical challenges</li>
+              <li>Monitoring performance and minimizing project risks</li>
             </ul>
           </div>
         </div>
       </div>
-
-
 
       <div id="languages-div">
         <h3>Languages</h3>
         <hr />
         <br />
         <div className="languagesbox-div">
-          <p>Polish</p>
-          <p>English</p>
-          <p>German</p>
-          <p>Italian</p>   
+          <div className="languagesmax-div">
+            <div className="languagePolish-div">
+              <p>Polish</p>
+            </div>
+          </div>
+          <div className="languagesmax-div">
+            <div className="languageEnglish-div">
+              <p>English</p>
+            </div>
+          </div><div className="languagesmax-div">
+            <div className="languageGerman-div">
+              <p>German</p>
+            </div>
+          </div><div className="languagesmax-div">
+            <div className="languageItalian-div">
+              <p>Italian</p>
+            </div>
+          </div>
         </div>
       </div>
 
-
-
-      
       <br />
       <div id="education-div">
         <h3>Education</h3>
@@ -159,13 +170,13 @@ const About = () => {
             />
             <div className="education-header">
               <h6>2018 - 2023</h6>
-              <p>
-                Engineering and Management of Construction Projects,
-                AGH University of Science and Technology
-              </p>
+              <p>Engineering and Management of Construction Projects,</p>
+              <p>AGH University of Science and Technology</p>
             </div>
             <ul>
-
+              <li>Managing projects and process optimization</li>
+              <li>Analysis using a variety of software</li>
+              <li></li>
             </ul>
           </div>
           <div className="education-container">
@@ -176,7 +187,8 @@ const About = () => {
             />
             <div className="education-header">
               <h6>2015-2018</h6>
-              <p>Mathematical, Physics and IT, 5th High School</p>
+              <p>Mathematical, Physics and IT,</p>
+              <p>5th High School</p>
             </div>
             <ul>
               <li>Programming: C++, VBA</li>
