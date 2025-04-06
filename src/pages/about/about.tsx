@@ -87,6 +87,16 @@ const About = () => {
         <br />
         <div className="experience-jobs">
           <div className="experience-job">
+            <img src={freelancing} alt="Freelancing" className="company-img" />
+            <h5>Freelancing 04/2022 - now</h5>
+            <h6>Project Manager</h6>
+            <ul>
+              <li>Planning and overseeing IT project execution</li>
+              <li>Coordinating teams and resolving technical challenges</li>
+              <li>Monitoring performance and minimizing project risks</li>
+            </ul>
+          </div>
+          <div className="experience-job">
             <img src={colliers} alt="Colliers Define" className="company-img" />
             <br />
             <h5>Colliers Define 07/2022 - now</h5>
@@ -118,16 +128,7 @@ const About = () => {
               </li>
             </ul>
           </div>
-          <div className="experience-job">
-            <img src={freelancing} alt="Freelancing" className="company-img" />
-            <h5>Freelancing 04/2022 - now</h5>
-            <h6>Project Manager</h6>
-            <ul>
-              <li>Planning and overseeing IT project execution</li>
-              <li>Coordinating teams and resolving technical challenges</li>
-              <li>Monitoring performance and minimizing project risks</li>
-            </ul>
-          </div>
+
         </div>
       </div>
 
@@ -139,19 +140,34 @@ const About = () => {
           <div className="languagesmax-div">
             <div className="languagePolish-div">
               <p>Polish</p>
+              <p>native</p>
             </div>
           </div>
+
           <div className="languagesmax-div">
             <div className="languageEnglish-div">
               <p>English</p>
             </div>
-          </div><div className="languagesmax-div">
+            <div className="languageClass-div">
+              <p>B2</p>
+            </div>
+
+          </div>
+
+          <div className="languagesmax-div">
             <div className="languageGerman-div">
               <p>German</p>
             </div>
-          </div><div className="languagesmax-div">
+            <div className="languageClass-div">
+              <p>A1</p>
+            </div>
+          </div>
+          <div className="languagesmax-div">
             <div className="languageItalian-div">
               <p>Italian</p>
+            </div>
+            <div className="languageClass-div">
+              <p>A1</p>
             </div>
           </div>
         </div>

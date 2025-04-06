@@ -134,6 +134,14 @@ $lang-color: #fff;
       border-color: #668F80;
       margin-top: 10px;
       margin-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .languageClass-div {
+      width: 4%;
+      flex-direction: row-reverse;
     }
 
     .languagePolish-div {
@@ -142,6 +150,9 @@ $lang-color: #fff;
       background-color: $lang-background-color;
       padding: $lang-padding;
       color: $lang-color;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
     .languageEnglish-div {
