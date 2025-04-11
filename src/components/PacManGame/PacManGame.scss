@@ -1,0 +1,28 @@
+.pacman-game {
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 520px;
+    height: 580px; // Increased height to display the game over message
+    background: #000; // Outer container background
+  
+    canvas {
+      background: #222; // In-game canvas background
+      box-shadow: 0 0 10px rgba(255, 255, 0, 0.8); // Retro arcade glow
+    }
+  
+    .game-over {
+      position: absolute;
+      top: 20px;
+      padding: 10px 20px;
+      background: rgba(0, 0, 0, 0.8);
+      color: red;
+      font-size: 2rem;
+      font-weight: bold;
+      z-index: 10;
+    }
+  }
+  

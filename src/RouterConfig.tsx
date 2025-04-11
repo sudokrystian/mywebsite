@@ -6,6 +6,9 @@ import Portfolio from "./pages/portfolio/portfolio";
 import Contact from "./pages/contact/contact";
 import Project from "./pages/project/project";
 import Error from "./pages/error/error";
+import SnakeGame from "./components/SnakeGame/SnakeGame";
+import TetrisGame from "./components/TetrisGame/TetrisGame";
+import PacManGame from "./components/PacManGame/PacManGame";
 
 const RouterConfig = () => {
   return (
@@ -26,6 +29,9 @@ const RouterConfig = () => {
         <Contact />
       </Route>
       <Route exact path="/project" component={Project}/>
+      <Route exact path="/snakegame" component={SnakeGame}/>
+      <Route exact path="/tetrisgame" component={TetrisGame}/>
+      <Route exact path="/pacmangame" component={PacManGame}/>
       <Route>
         <Error />
       </Route>

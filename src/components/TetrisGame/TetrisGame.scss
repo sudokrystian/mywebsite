@@ -1,0 +1,69 @@
+$tetris-bg: #111;
+$tetris-border: #333;
+$cell-fixed: #888;
+$cell-active: #ffcc00;
+$cell-size: 25px;
+
+.tetris-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #222;
+  min-height: 100vh;
+  padding: 20px;
+
+  .board {
+    position: relative;
+    background-color: $tetris-bg;
+    border: 3px solid $tetris-border;
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      
+      .cell {
+        width: $cell-size;
+        height: $cell-size;
+        border: 1px solid $tetris-border;
+        background-color: $tetris-bg;
+        
+        &.fixed {
+          background-color: $cell-fixed;
+        }
+        
+        &.active {
+          background-color: $cell-active;
+        }
+      }
+    }
+  }
+
+  .instructions {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .game-over {
+    text-align: center;
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: $cell-active;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($cell-active, 10%);
+      }
+    }
+  }
+}
