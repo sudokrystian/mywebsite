@@ -192,7 +192,7 @@ const About = () => {
             <ul>
               <li>Managing projects and process optimization</li>
               <li>Analysis using a variety of software</li>
-              <li></li>
+              <li>Solving complex tasks with a range of programs</li>
             </ul>
           </div>
           <div className="education-container">

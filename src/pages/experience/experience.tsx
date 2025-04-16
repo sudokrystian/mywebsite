@@ -8,6 +8,12 @@ import python from "../../assets/experience/technologies/python.png";
 import react from "../../assets/experience/technologies/react.png";
 import scss from "../../assets/experience/technologies/scss.png";
 import html from "../../assets/experience/technologies/html.png";
+import scrum from "../../assets/experience/technologies/scrum.svg";
+import msproject from "../../assets/experience/technologies/msproject.png";
+import office from "../../assets/experience/technologies/office.png";
+import matlab from "../../assets/experience/technologies/matlab.png";
+import powerbi from "../../assets/experience/technologies/powerbi.png";
+import agile from "../../assets/experience/technologies/agile.svg";
 
 
 
@@ -28,20 +34,54 @@ const Experience = () => {
       <div className="jobskills">
         <ul>
           <li>HTML, SCSS, CSS</li>
+          <li>React</li>
           <li>Python</li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Organizational skills</li>
+          <li>Creativity</li>
+          <li>Logical thinking</li>
+          <li>Responsibility</li>
+          <li>Timeliness</li>
+          <li>Scrum</li>
+          <li>Agile</li>
+          <li>Quick learner</li>
         </ul>
         <div className="job-skills-images">
           <img src={html} alt="HTML" />
           <img src={scss} alt="scss" />
           <img src={react} alt="react" />
           <img src={python} alt="Python" />
+          <img src={scrum} alt="SCRUM" />
+          <img src={agile} alt="Agile" />
         </div>
       </div>
+      <p>
+        Throughout my career as an IT Project Manager, I've driven innovation and efficiency across diverse projects.
+        Initially, I oversaw a small game development project, ensuring the developer met strict deadlines by prioritizing
+        essential tasks over distractions. Later, I managed an AI-driven book project where I coordinated the creation
+        of flawless, machine learning-enhanced visuals and guided strategic translation decisions to maintain cultural
+        relevance. In a subsequent role, I tackled a complex NDA project by developing an algorithm that automated
+        the translation of software into multiple languages, drastically reducing recurring costs from translation
+        agencies and achieving near-completion within three weeks.
+        {/* In my first role as an IT Project Manager, I was responsible for overseeing the development of a small game. My primary 
+        focus was on ensuring the developer adhered to a strict timeline, effectively balancing creative exploration with 
+        the necessity of prioritizing core tasks. This position allowed me to hone my skills in time management and task 
+        prioritization, ensuring project milestones were consistently met despite challenges with focus on nonessential tasks.
+
+        In my second role, I managed an innovative project centered on creating a unique book that integrated AI-generated 
+        imagery and advanced machine learning techniques to produce flawless visuals. I coordinated the entire process—from 
+        efining the picture quality to managing the book’s translation. A key challenge was making strategic decisions, 
+        such as whether to translate specific names, ensuring cultural and contextual relevance. Operating under strict deadlines, 
+        I diligently monitored team performance to ensure that each member delivered efficiently without exceeding 
+        the necessary scope, thereby maintaining focus and driving the project to success.
+
+        In my third role, I managed a complex NDA project that addressed the high costs of translating English software 
+        into multiple languages. Traditionally, we had to rely on translation agencies—incurring recurring expenses each 
+        time a translation was completed. To tackle this challenge, we invested in developing an innovative algorithm that 
+        automated the translation process, meaning we only paid our developers once rather than facing continuous agency fees. 
+        This strategic move not only reduced ongoing costs substantially but also enabled rapid scalability for global 
+        software localization. Working under a tight deadline, we reached near-completion within three weeks, demonstrating 
+        our ability to deliver cost-effective and efficient solutions. */}
+      </p>
       <hr className="experience-spacer" />
       <br />
       <img src={colliers} alt="Colliers Define" className="company-img" />
@@ -66,9 +106,13 @@ const Experience = () => {
           <li>Timeliness</li>
           <li>Scrum</li>
           <li>MS Project</li>
+          <li>HTML</li>
         </ul>
         <div className="job-skills-images">
-          <img src={react} alt="react" />
+          <img src={powerbi} alt="Power BI" />
+          <img src={scrum} alt="SCRUM" />
+          <img src={msproject} alt="MS Project" />
+          <img src={html} alt="HTML" />
         </div>
       </div>
 
@@ -106,7 +150,10 @@ const Experience = () => {
           <li>MATLAB</li>
         </ul>
         <div className="job-skills-images">
-
+          <img src={scrum} alt="SCRUM" />
+          <img src={msproject} alt="MS Project" />
+          <img src={office} alt="MS Office" />
+          <img src={matlab} alt="MATLAB" />
         </div>
       </div>
 
@@ -125,10 +172,10 @@ const Experience = () => {
         and reporting. Moreover, I expanded my analytical capabilities through MATLAB, which I used to
         refine processes and drive data-based decision-making.
       </p>
-      
 
 
-      
+
+
     </div>
   );
 };
