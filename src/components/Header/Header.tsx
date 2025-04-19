@@ -3,7 +3,7 @@ import { ReactComponent as CloseMenu } from "../../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../../assets/menu.svg";
 import { BrowserRouter as Route, NavLink } from "react-router-dom";
 import RouterConfig from "../../RouterConfig";
-import logo from "../../assets/logo/ulaLogo2Clean.png"
+import logo from "../../assets/logo/favicon2.png"
 import "./Header.scss";
 
 const Header = () => {
