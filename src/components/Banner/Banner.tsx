@@ -2,18 +2,18 @@ import { useState } from "react";
 import happy from "../../assets/my_pictures/chosen/happy.jpg";
 import mountain from "../../assets/my_pictures/chosen/mountain.jpg";
 import angry from "../../assets/my_pictures/chosen/angry.jpg";
-import shock from "../../assets/my_pictures/chosen/shock.jpg";
-import rocks from "../../assets/my_pictures/chosen/rocks.jpg";
+import lighthouse from "../../assets/my_pictures/chosen/lighthouse.jpg";
+// import rocks from "../../assets/my_pictures/chosen/question.jpg";
 import "./Banner.scss";
 
 const Banner = () => {
-  const pictures: string[] = [happy, mountain, angry, shock, rocks];
+  const pictures: string[] = [happy, mountain, angry, lighthouse];
   const traits: string[] = [
     "new project starts",
     "difficulties show up",
     "work doesn't get done",
     "project turns out to be bigger than expected",
-    "it's time to show results of team work"
+    // "it's time to recharge"
   ];
 
   const [index, setIndex] = useState<number>(0);
