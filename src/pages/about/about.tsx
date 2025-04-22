@@ -102,7 +102,18 @@ const About = () => {
             <h5>Colliers Define 07/2022 - now</h5>
             <h6>Project Coordinator</h6>
             <ul>
-              <li>Supervision, verification and coordination of the works carried out</li>
+              <li>Supervision, verification and coordination of the works carried out (f.e.
+                <a
+                  href="https://www.instagram.com/p/C_SkIpto9Fx/?img_index=5"
+                  id="project-link"
+                  className="bold-600"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  Farnell office){" "}
+                </a>
+              </li>
               <li>Defining project requirements based on customer input</li>
               <li>Overseeing and validating ongoing tasks and deliverables</li>
             </ul>
@@ -117,7 +128,7 @@ const About = () => {
               <li>Coordination of project workflows (f.e.
                 <a
                   href="https://www.facebook.com/NaWzgorzuJaworzno/"
-                  id="nawzgorzu-link"
+                  id="project-link"
                   className="bold-600"
                   target="_blank"
                   rel="noreferrer"
