@@ -1,12 +1,10 @@
-import StarWars from "../../assets/my_projects/star_wars_login.jpg";
+import snake from "../../assets/my_projects/snake.jpg";
 import movietoo from "../../assets/my_projects/movietoo-min.png";
 import api from "../../assets/my_projects/api.jpg";
 import this_website from "../../assets/my_projects/this_website.png";
 import embedded from "../../assets/my_projects/embedded.jpg";
-import jpa from "../../assets/my_projects/jpa.png";
-import scrum from "../../assets/my_projects/scrum.png";
-import spring from "../../assets/my_projects/spring.png";
-import froggers from "../../assets/my_projects/froggers.png";
+
+
 
 export interface ProjectData {
   projectTitle: string;
@@ -15,13 +13,13 @@ export interface ProjectData {
   projectTechnologies: string[];
   projectUrl: string;
 }
-
+ 
 // Projects information  ===============================================================================
 
-// StarWars
-const starWarsProjectTitle = "Star Wars game";
+// Snake
+const snakeProjectTitle = "Snake";
 
-const starWarsProjectTechnologies = ["Java", "JavaFX"];
+const snakeProjectTechnologies = ["SCSS", "React"];
 
 const starWarsProjectDescription = `This online shooter was developed in Java 8. It 
 was an experiment to check how efficient can be a game written in JavaFX (which is
@@ -30,18 +28,20 @@ customly written engine that uses sockets and RMI for multiplayer gameplay
 provided quite satisfying results. It is a simple 2D shooter with basic collision 
 physics, but thanks to nice graphics it provides a fun nostalgic experience.`;
 
-const starWarsProjectUrl =
-  "https://github.com/sudokrystian/StarWars-game-client";
 
-const starWarsProject: ProjectData = {
-  projectTitle: starWarsProjectTitle,
-  projectImage: StarWars,
+
+const starWarsProjectUrl =
+  "https://github.com/sudokrystian/StarWars-game-client"; 
+
+const snakeProject: ProjectData = {
+  projectTitle: snakeProjectTitle,
+  projectImage: snake,
   projectDescription: starWarsProjectDescription,
-  projectTechnologies: starWarsProjectTechnologies,
+  projectTechnologies: snakeProjectTechnologies,
   projectUrl: starWarsProjectUrl,
 };
 
-// MovieToo
+// Tetris
 const movietooProjectTitle = "MovieToo";
 
 const movietooProjectTechnologies = [
@@ -70,7 +70,7 @@ const movietooProject: ProjectData = {
   projectUrl: movietooProjectUrl,
 };
 
-// MoviesAPI
+// PacMan
 const moviesAPIProjectTitle = "Movies API server and database";
 
 const moviesAPITechnologies = ["Python", "Django", "JWT", "Azure Cloud"];
@@ -110,7 +110,7 @@ a proper CI/CD than AWS or Azure, therefore I encourage to checkout the old yaml
 The website is a classic example of React component based application, that makes use of the best 
 functionalities like states. I hope you played with  the particles on the home page!`;
 
-const thisWebsiteProjectUrl = "https://github.com/sudokrystian/my-website";
+const thisWebsiteProjectUrl = "https://github.com/Ulszka/mywebsite";
 
 const thisWebsiteProject: ProjectData = {
   projectTitle: thisWebsiteProjectTitle,
@@ -141,106 +141,18 @@ const embeddedProject: ProjectData = {
   projectUrl: embeddedProjectUrl,
 };
 
-// Data layer
-const dataLayerProjectTitle = "Data Layer for Scrum Management Tool";
 
-const dataLayerProjectTechnologies = ["Java", "Spring", "JPA"];
 
-const dataLayerProjectDescription = `Old (3 years in programming years is old) solution for the data 
-layer implemented with Java Spring and JPA. No doubt Spring is my favorite REST service. Easy to use, 
-highly customizable and the maintnance is a pure pleasure if the project follows the recommended 
-architecture. The same applies to this case, although some things are a bit outdated the 
-structure is so clean that there would be no problem to jump in and tweak the solution. JPA 
-made the work here incredibly easy and pleasant.`;
 
-const dataLayerProjetUrl =
-  "https://github.com/sudokrystian/Scrum-management-tool-Data-Layer";
-
-const dataLayerProject: ProjectData = {
-  projectTitle: dataLayerProjectTitle,
-  projectImage: jpa,
-  projectDescription: dataLayerProjectDescription,
-  projectTechnologies: dataLayerProjectTechnologies,
-  projectUrl: dataLayerProjetUrl,
-};
-
-// Scrum client
-const scrumClientProjectTitle = "Client for Scrum Management Tool";
-
-const scrumClientProjectTechnologies = [".NET", "Razor", "JavaScript"];
-
-const scrumClientProjectDescription = `A long time ago in a galaxy far, far away we were using .NET 3 
-and Razor to create interactive websites with Microsoft frameworks. This was one of my first bigger 
-projects. Razor is definietely light-years behind Blazor, but with help of JavaScript it still turned 
-out to be a nice interactive website for organizing agile development. Users can create tasks, assign 
-roles and much, much more. Defineitely not the technology that I would recommend to anyone nowadays, 
-but a nostalgic look back, when my adventure with programming was starting to gain the momentum.`;
-
-const scrumClientProjectUrl =
-  "https://github.com/sudokrystian/Scrum-management-tool-Client";
-
-const scrumClientProject: ProjectData = {
-  projectTitle: scrumClientProjectTitle,
-  projectImage: scrum,
-  projectDescription: scrumClientProjectDescription,
-  projectTechnologies: scrumClientProjectTechnologies,
-  projectUrl: scrumClientProjectUrl,
-};
-
-// Business layer
-const businessLayerProjectTitle = "Business layer for Scrum Management Tool";
-
-const businessLayerProjectTechnologies = ["Java", "Spring"];
-
-const businessLayerProjectDescription = `Could you create a REST service that will.." YES, THE ANSWER 
-IS SPRING. In all honesty that part of the distributed system is completely artificial in this case, 
-but the client wanted the entirety to be super flexible. Therefore here we go, a business layer! If 
-you want to see the diagram for the architecture, click on the Spring image, it is displayed in 
-README.md in the repo. As a business layer should, this applicaiton handles the business rules, 
-calculations and cleans up the data before forwarding it to the Data Layer.`;
-
-const businessLayerProjectUrl =
-  "https://github.com/sudokrystian/Scrum-management-tool-Business-layer";
-
-const businessLayerProject: ProjectData = {
-  projectTitle: businessLayerProjectTitle,
-  projectImage: spring,
-  projectDescription: businessLayerProjectDescription,
-  projectTechnologies: businessLayerProjectTechnologies,
-  projectUrl: businessLayerProjectUrl,
-};
-
-// Froggers
-const froggersProjectTitle = "Unity 2D game";
-
-const froggersProjectTechnologies = ["Unity", ".NET"];
-
-const froggersProjectDescription = `Coding is not only my job, but also my hobby. It is difficult to
-come up with more fun part of coding than creating games of course! In my free time I developed a fun
-2D platformer with custom AI and much more. Check out the Game tab if you didn't see it yet!`;
-
-const froggersProjectUrl =
-  "https://github.com/sudokrystian/Game-2D";
-
-const froggersProject: ProjectData = {
-  projectTitle: froggersProjectTitle,
-  projectImage: froggers,
-  projectDescription: froggersProjectDescription,
-  projectTechnologies: froggersProjectTechnologies,
-  projectUrl: froggersProjectUrl,
-};
 // =====================================================================================================
 
 const projects = [
-    starWarsProject, 
+    snakeProject, 
     movietooProject, 
     moviesAPIProject,
     thisWebsiteProject,
-    embeddedProject,
-    dataLayerProject,
-    scrumClientProject,
-    businessLayerProject,
-    froggersProject
+    embeddedProject
+    
 ];
 
 export default projects;

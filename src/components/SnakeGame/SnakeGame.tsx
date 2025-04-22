@@ -6,7 +6,7 @@ interface Position {
   y: number;
 }
 
-const boardSize = 20; // Defines a 20 x 20 board
+const boardSize = 40; // Defines a 20 x 20 board
 const initialSnake: Position[] = [{ x: 10, y: 10 }];
 const initialDirection: Position = { x: 0, y: 1 };
 
