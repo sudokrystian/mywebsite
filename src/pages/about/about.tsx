@@ -192,7 +192,7 @@ const About = () => {
           <div className="education-container">
             <img
               src={agh}
-              alt="VIA Univesity Collage"
+              alt="AGH University of Science and Technology"
               className="education-image"
             />
             <div className="education-header">
@@ -209,7 +209,7 @@ const About = () => {
           <div className="education-container">
             <img
               src={vlo}
-              alt="Maskinmesterskole"
+              alt="V LO"
               className="education-image"
             />
             <div className="education-header">
