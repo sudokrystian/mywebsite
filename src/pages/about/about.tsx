@@ -91,7 +91,19 @@ const About = () => {
             <h5>Freelancing 04/2022 - now</h5>
             <h6>Project Manager</h6>
             <ul>
-              <li>Planning and overseeing IT project execution</li>
+              <li>Planning and overseeing IT project execution (f.e.
+                <a
+                  href="https://sudokrystian.com/game"
+                  id="project-link"
+                  className="bold-600"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  Froggers){" "}
+                </a>
+
+              </li>
               <li>Coordinating teams and resolving technical challenges</li>
               <li>Monitoring performance and minimizing project risks</li>
             </ul>
