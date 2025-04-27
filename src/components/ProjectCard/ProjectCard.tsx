@@ -4,14 +4,13 @@ import SkillBox from "../SkillBox/SkillBox";
 import "./ProjectCard.scss";
 
 const ProjectCard = (props: {
-  projectIndex: number, 
-  pathname: string
+  projectIndex: number
 }) => {
   return (
     <div className="project">
       <NavLink
-        to={{ 
-          pathname: props.pathname,
+        to={{
+          pathname: "/project",
           state: props.projectIndex,
         }}
       >

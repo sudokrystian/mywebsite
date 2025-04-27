@@ -28,10 +28,18 @@ const RouterConfig = () => {
       <Route exact path="/contact">
         <Contact />
       </Route>
-      <Route exact path="/project" component={Project}/>
-      <Route exact path="/snakegame" component={SnakeGame}/>
-      <Route exact path="/tetrisgame" component={TetrisGame}/>
-      <Route exact path="/pacmangame" component={PacManGame}/>
+      <Route exact path="/project">
+        <Project />
+      </Route>
+      <Route exact path="/snakegame">
+        <SnakeGame />
+      </Route>
+      <Route exact path="/tetrisgame">
+        <TetrisGame />
+      </Route>
+      <Route exact path="/pacmangame">
+        <PacManGame />
+      </Route>
       <Route>
         <Error />
       </Route>
