@@ -2,7 +2,7 @@ $border-color: rgba(0, 0, 0, 0.274);
 $padding-project: 15px;
 $padding-sides: 60px;
 $padding-sides-mobile: 20px;
-$image-width: 380px;
+$image-width: 600px;
 
 .project-div {
   @media (max-width: 648px) {
@@ -42,7 +42,7 @@ $image-width: 380px;
 
     @media (min-width: 649px) {
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
     }
 
     img {
