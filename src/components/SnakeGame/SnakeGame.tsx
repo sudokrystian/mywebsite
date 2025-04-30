@@ -6,11 +6,10 @@ interface Position {
   y: number;
 }
 
-const boardSize = 40; // Defines a 20 x 20 board
+const boardSize = 20; // 20×20 grid
 const initialSnake: Position[] = [{ x: 10, y: 10 }];
 const initialDirection: Position = { x: 0, y: 1 };
 
-// Helper function to generate a random food position not on the snake
 const getRandomFoodPosition = (snake: Position[]): Position => {
   let newFood: Position;
   while (true) {
@@ -18,10 +17,7 @@ const getRandomFoodPosition = (snake: Position[]): Position => {
       x: Math.floor(Math.random() * boardSize),
       y: Math.floor(Math.random() * boardSize),
     };
-    const collision = snake.some(
-      (segment) => segment.x === newFood.x && segment.y === newFood.y
-    );
-    if (!collision) break;
+    if (!snake.some(seg => seg.x === newFood.x && seg.y === newFood.y)) break;
   }
   return newFood;
 };
@@ -31,48 +27,37 @@ const SnakeGame: React.FC = () => {
   const [direction, setDirection] = useState<Position>(initialDirection);
   const [food, setFood] = useState<Position>(getRandomFoodPosition(initialSnake));
   const [gameOver, setGameOver] = useState<boolean>(false);
-  const moveInterval = useRef<number | undefined>(undefined);
+  const [score, setScore] = useState<number>(0);
+  const [timeElapsed, setTimeElapsed] = useState<number>(0);
 
-  // Handle keyboard input to change the snake's direction
+  const moveInterval = useRef<number>();
+  const timerInterval = useRef<number>();
+
+  // Keyboard controls
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      switch (e.key) {
-        case "ArrowUp":
-          if (direction.y !== 1) setDirection({ x: 0, y: -1 });
-          break;
-        case "ArrowDown":
-          if (direction.y !== -1) setDirection({ x: 0, y: 1 });
-          break;
-        case "ArrowLeft":
-          if (direction.x !== 1) setDirection({ x: -1, y: 0 });
-          break;
-        case "ArrowRight":
-          if (direction.x !== -1) setDirection({ x: 1, y: 0 });
-          break;
-        default:
-          break;
-      }
+      if (e.key === "ArrowUp" && direction.y !== 1) setDirection({ x: 0, y: -1 });
+      if (e.key === "ArrowDown" && direction.y !== -1) setDirection({ x: 0, y: 1 });
+      if (e.key === "ArrowLeft" && direction.x !== 1) setDirection({ x: -1, y: 0 });
+      if (e.key === "ArrowRight" && direction.x !== -1) setDirection({ x: 1, y: 0 });
     };
-
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [direction]);
 
-  // Main game loop to update the snake's position
+  // Game loop + timer
   useEffect(() => {
     if (gameOver) {
-      if (moveInterval.current) clearInterval(moveInterval.current);
+      clearInterval(moveInterval.current);
+      clearInterval(timerInterval.current);
       return;
     }
 
     moveInterval.current = window.setInterval(() => {
-      setSnake((prevSnake) => {
-        const newHead: Position = {
-          x: prevSnake[0].x + direction.x,
-          y: prevSnake[0].y + direction.y,
-        };
+      setSnake(prev => {
+        const newHead = { x: prev[0].x + direction.x, y: prev[0].y + direction.y };
 
-        // Check collision with walls
+        // collision with walls
         if (
           newHead.x < 0 ||
           newHead.x >= boardSize ||
@@ -80,54 +65,59 @@ const SnakeGame: React.FC = () => {
           newHead.y >= boardSize
         ) {
           setGameOver(true);
-          return prevSnake;
+          return prev;
         }
 
-        // Check collision with self
-        if (prevSnake.some((segment) => segment.x === newHead.x && segment.y === newHead.y)) {
+        // collision with self
+        if (prev.some(seg => seg.x === newHead.x && seg.y === newHead.y)) {
           setGameOver(true);
-          return prevSnake;
+          return prev;
         }
 
-        let newSnake = [newHead, ...prevSnake];
-
-        // Check if food is eaten
+        const newSnake = [newHead, ...prev];
+        // eating food
         if (newHead.x === food.x && newHead.y === food.y) {
           setFood(getRandomFoodPosition(newSnake));
+          setScore(s => s + 1);
         } else {
           newSnake.pop();
         }
-
         return newSnake;
       });
-    }, 200); // adjust the speed (milliseconds)
+    }, 200);
+
+    timerInterval.current = window.setInterval(() => {
+      setTimeElapsed(t => t + 1);
+    }, 1000);
 
     return () => {
-      if (moveInterval.current) clearInterval(moveInterval.current);
+      clearInterval(moveInterval.current);
+      clearInterval(timerInterval.current);
     };
   }, [direction, food, gameOver]);
 
-  // Restart the game by reinitializing state
   const restartGame = () => {
     setSnake(initialSnake);
     setDirection(initialDirection);
     setFood(getRandomFoodPosition(initialSnake));
     setGameOver(false);
+    setScore(0);
+    setTimeElapsed(0);
   };
 
-  // Render board cells
   const renderCells = () => {
     const cells = [];
     for (let y = 0; y < boardSize; y++) {
       for (let x = 0; x < boardSize; x++) {
-        const isSnake = snake.some((segment) => segment.x === x && segment.y === y);
+        const isSnake = snake.some(seg => seg.x === x && seg.y === y);
+        const isHead = snake[0].x === x && snake[0].y === y;
         const isFood = food.x === x && food.y === y;
         cells.push(
           <div
             key={`${x}-${y}`}
-            className={`cell ${isSnake ? "snake" : ""} ${isFood ? "food" : ""}`}
+            className={`cell ${isSnake ? "snake" : ""} ${isHead ? "head" : ""} ${isFood ? "food" : ""}`}
             style={{ gridRowStart: y + 1, gridColumnStart: x + 1 }}
-          ></div>
+          />
         );
       }
     }
@@ -137,10 +127,16 @@ const SnakeGame: React.FC = () => {
   return (
     <div className="snake-game-container">
       <h1>Snake Game</h1>
+      <div className="scoreboard">
+        <div>🍎 Score: {score}</div>
+        <div>⏱️ Time: {timeElapsed}s</div>
+      </div>
       <div className="board">{renderCells()}</div>
       {gameOver && (
         <div className="game-over">
           <h2>Game Over</h2>
+          <p>Final Score: {score}</p>
+          <p>Time: {timeElapsed} seconds</p>
           <button onClick={restartGame}>Restart</button>
         </div>
       )}

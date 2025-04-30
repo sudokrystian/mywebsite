@@ -71,7 +71,12 @@ const snakeTitle = "Snake";
 
 const snakeTechnologies = ["React", "TypeScript", "SCSS"];
 
-const snakeDescription = `Still under construction, please wait a little more :)`;
+const snakeDescription = `If you’re checking out my site, you’ll find the Snake game I built—purely for fun 
+and to sharpen skills. Using TypeScript (TSX) and SCSS, I recreated the core mechanics of the 
+classic: smooth movement, growing tail, and collision detection. I leaned on AI-assisted coding tools to 
+accelerate development, but I made every architectural decision—identifying which gameplay elements were 
+essential and which I could trim to hit my deadline. The result is a lean, responsive Snake clone that 
+taught me a ton about state management, styling with SCSS, and balancing feature scope under time constraints.`;
 
 const snakeUrl = "/snakegame";
 

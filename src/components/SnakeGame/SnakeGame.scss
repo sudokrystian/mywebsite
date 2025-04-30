@@ -1,55 +1,94 @@
 .snake-game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: sans-serif;
-  
-    h1 {
-      margin-bottom: 20px;
-    }
-  }
-  
-  .board {
-    display: grid;
-    grid-template-rows: repeat(20, 20px);
-    grid-template-columns: repeat(20, 20px);
-    gap: 1px;
-    background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+
+  h1 {
     margin-bottom: 20px;
   }
+}
+
+.board {
+  display: grid;
+  grid-template-rows: repeat(20, 20px);
+  grid-template-columns: repeat(20, 20px);
+  gap: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
   
-  .cell {
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
+  /* ADD FRAME */
+  border: 5px solid #333; // Dark solid frame
+  border-radius: 8px; // Rounded corners (optional)
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); // Optional: nice shadow
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+
+.cell.snake {
+  background-color: #2ecc71; // Snake color (green)
+}
+
+.cell.food {
+  background-color: #e74c3c; // Food color (red)
+}
+
+.game-over {
+  text-align: center;
+
+  h2 {
+    color: #e74c3c;
   }
-  
-  .cell.snake {
-    background-color: #2ecc71; // Snake color (green)
-  }
-  
-  .cell.food {
-    background-color: #e74c3c; // Food color (red)
-  }
-  
-  .game-over {
-    text-align: center;
-  
-    h2 {
-      color: #e74c3c;
+
+  button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2980b9;
     }
-  
-    button {
-      padding: 10px 20px;
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-  
-      &:hover {
-        background-color: #2980b9;
-      }
-    }
   }
-  
+}
+// Add head animation
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #27ae60;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #2ecc71;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #27ae60;
+  }
+}
+
+.cell.head {
+  animation: pulse 0.4s infinite;
+  z-index: 1; // Makes sure head appears above body slightly
+}
+
+.scoreboard {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+
+  div {
+    background: #ecf0f1;
+    padding: 8px 15px;
+    border-radius: 8px;
+  }
+}
