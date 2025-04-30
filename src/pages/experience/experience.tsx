@@ -10,7 +10,7 @@ import scss from "../../assets/experience/technologies/scss.png";
 import html from "../../assets/experience/technologies/html.png";
 import scrum from "../../assets/experience/technologies/scrum.svg";
 import msproject from "../../assets/experience/technologies/msproject.png";
-import office from "../../assets/experience/technologies/office.png";
+import office from "../../assets/experience/technologies/office.svg";
 import matlab from "../../assets/experience/technologies/matlab.png";
 import powerbi from "../../assets/experience/technologies/powerbi.png";
 import agile from "../../assets/experience/technologies/agile.svg";
