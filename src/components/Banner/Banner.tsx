@@ -2,7 +2,7 @@ import { useState } from "react";
 import happy from "../../assets/my_pictures/chosen/happy.jpg";
 import mountain from "../../assets/my_pictures/chosen/mountain.jpg";
 import angry from "../../assets/my_pictures/chosen/angry.jpg";
-import lighthouse from "../../assets/my_pictures/chosen/lighthouse.jpg";
+import lighthouse from "../../assets/my_pictures/chosen/lighthouse_edit.jpg";
 // import rocks from "../../assets/my_pictures/chosen/question.jpg";
 import "./Banner.scss";
 
@@ -14,6 +14,7 @@ const Banner = () => {
     "work doesn't get done",
     "project turns out to be bigger than expected",
     // "it's time to recharge"
+    // "it's time for adventure"
   ];
 
   const [index, setIndex] = useState<number>(0);
