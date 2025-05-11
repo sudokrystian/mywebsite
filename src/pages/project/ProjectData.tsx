@@ -21,14 +21,15 @@ export interface ProjectData {
 // This website
 const websiteTitle = "This website";
 
-const websiteTechnologies = ["React", "TypeScript", "Google Cloud"];
+const websiteTechnologies = ["React", "TypeScript"];
 
 const websiteDescription = `If you’re here, you’re already checking out one of my personal projects—my website, 
 built for fun and to learn new skills. I designed and implemented every visual and interactive element while 
-collaborating with a back-end developer who built the server-side infrastructure. I also conceptualized and coded 
-three small browser-based games, leveraging AI-assisted coding tools to streamline development and enhance 
-gameplay logic. This project sharpened my skills in HTML, CSS, and JavaScript, as well as in UX design and creative 
-problem-solving, resulting in a polished, engaging site and interactive content.`;
+collaborating with a software developer I had worked with in the past, who built the skeleton of the web app 
+and set up the DevOps pipeline for continuous deployment. I also came up with and built three small browser games, 
+using AI tools to speed up development and enhance gameplay logic. This project sharpened my skills in React, TypeScript 
+and SCSS, as well as in UX design and creative problem-solving, resulting in a polished, engaging site and 
+interactive content.`;
 
 const websiteUrl = "https://github.com/Ulszka/mywebsite";
 
@@ -45,11 +46,13 @@ const website: ProjectData = {
 // Froggers
 const froggersTitle = "Froggers";
 
-const froggersTechnologies = ["Scrum", "FreeRTOS"];
+const froggersTechnologies = ["Scrum", "Agile"];
 
 const froggersDescription = `In my first role as an IT Project Manager, I was responsible for overseeing 
-the development of a small game. My primary focus was on ensuring the developer adhered to a strict timeline, 
-effectively balancing creative exploration with the necessity of prioritizing core tasks. This position 
+the development of game implemented in unity utilizing .NET. My primary focus was on ensuring the developer adhered to a strict timeline, 
+effectively balancing creative exploration with the necessity of prioritizing core tasks. 
+At times, the developer wanted to focus on optimizing algorithms that, while interesting technically, had little impact on the user experience compared to smoother animations or more polished visuals.
+This position 
 allowed me to hone my skills in time management and task prioritization, ensuring project milestones 
 were consistently met despite challenges with focus on nonessential tasks.`;
 

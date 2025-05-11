@@ -1,21 +1,21 @@
 import { useState } from "react";
+import ukulele from "../../assets/my_pictures/chosen/ukulele.jpg";
 import happy from "../../assets/my_pictures/chosen/happy.jpg";
 import mountain from "../../assets/my_pictures/chosen/mountain.jpg";
 import angry from "../../assets/my_pictures/chosen/angry.jpg";
 import lighthouse from "../../assets/my_pictures/chosen/lighthouse_edit.jpg";
 import motorcycle from "../../assets/my_pictures/chosen/motorcycle.jpg";
-import ukulele from "../../assets/my_pictures/chosen/ukulele.jpg";
 import "./Banner.scss";
 
 const Banner = () => {
   const pictures: string[] = [ukulele, happy, mountain, angry, lighthouse, motorcycle];
   const traits: string[] = [
-    "it's time off",
+    "project hasn't started yet",
     "new project starts",
     "difficulties show up",
     "work doesn't get done",
     "project turns out to be bigger than expected",
-    "it's time for adventure",
+    "the sprint ends and the ride begins.",
   ];
 
   const [index, setIndex] = useState<number>(0);

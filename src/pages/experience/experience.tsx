@@ -8,12 +8,12 @@ import python from "../../assets/experience/technologies/python.png";
 import react from "../../assets/experience/technologies/react.png";
 import scss from "../../assets/experience/technologies/scss.png";
 import html from "../../assets/experience/technologies/html.png";
-import scrum from "../../assets/experience/technologies/scrum.svg";
+import scrum from "../../assets/experience/technologies/scrum.png";
 import msproject from "../../assets/experience/technologies/msproject.png";
-import office from "../../assets/experience/technologies/office.svg";
+import office from "../../assets/experience/technologies/office.png";
 import matlab from "../../assets/experience/technologies/matlab.png";
 import powerbi from "../../assets/experience/technologies/powerbi.png";
-import agile from "../../assets/experience/technologies/agile.svg";
+import agile from "../../assets/experience/technologies/agile.png";
 
 
 
@@ -33,25 +33,25 @@ const Experience = () => {
       </p>
       <div className="jobskills">
         <ul>
-          <li>HTML, SCSS, CSS</li>
-          <li>React</li>
-          <li>Python</li>
+          <li>Scrum</li>
+          <li>Agile</li>
           <li>Organizational skills</li>
-          <li>Creativity</li>
           <li>Logical thinking</li>
           <li>Responsibility</li>
           <li>Timeliness</li>
-          <li>Scrum</li>
-          <li>Agile</li>
           <li>Quick learner</li>
+          <li>Creativity</li>
+          <li>React</li>
+          <li>Python</li>
+          <li>HTML, SCSS, CSS</li>
         </ul>
         <div className="job-skills-images">
-          <img src={html} alt="HTML" />
-          <img src={scss} alt="scss" />
-          <img src={react} alt="react" />
-          <img src={python} alt="Python" />
           <img src={scrum} alt="SCRUM" />
           <img src={agile} alt="Agile" />
+          <img src={react} alt="react" />
+          <img src={python} alt="Python" />
+          <img src={html} alt="HTML" />
+          <img src={scss} alt="scss" /> 
         </div>
       </div>
       <p>
@@ -98,19 +98,19 @@ const Experience = () => {
       </p>
       <div className="jobskills">
         <ul>
+          <li>Scrum</li>
           <li>Organizational skills</li>
-          <li>Creativity</li>
           <li>Logical thinking</li>
-          <li>Power-BI</li>
           <li>Responsibility</li>
           <li>Timeliness</li>
-          <li>Scrum</li>
+          <li>Creativity</li>
+          <li>Power-BI</li>     
           <li>MS Project</li>
           <li>HTML</li>
         </ul>
         <div className="job-skills-images">
-          <img src={powerbi} alt="Power BI" />
           <img src={scrum} alt="SCRUM" />
+          <img src={powerbi} alt="Power BI" />
           <img src={msproject} alt="MS Project" />
           <img src={html} alt="HTML" />
         </div>
@@ -142,9 +142,9 @@ const Experience = () => {
       <br />
       <div className="jobskills">
         <ul>
+          <li>Scrum</li>
           <li>Quick learner</li>
           <li>Timeliness</li>
-          <li>Scrum</li>
           <li>MS Project</li>
           <li>Microsoft Office</li>
           <li>MATLAB</li>
