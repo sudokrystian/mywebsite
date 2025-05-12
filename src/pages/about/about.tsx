@@ -5,7 +5,7 @@ import "./about.scss";
 import agh from "../../assets/experience/agh_logo.png";
 import colliers from "../../assets/experience/colliers_logo_clean.png";
 import twojDev from "../../assets/experience/twoj_developer.png";
-import freelancing from "../../assets/experience/freelancing_women.avif";
+import freelancing from "../../assets/experience/freelancing_women.png";
 import vlo from "../../assets/experience/v_logo.png";
 
 const About = () => {
@@ -32,7 +32,7 @@ const About = () => {
     "Tech-savvy",
     "Timeliness",
     "Responsibility",
-  ];
+  ]; 
 
   return (
     <div className="about-div">
@@ -40,14 +40,10 @@ const About = () => {
         <h3 className="about-title">About me</h3>
         <hr />
         <p className="about-introduction">
-          Hello there, I'm Ula—a proactive Project Coordinator with over two years of
-          experience driving complex projects. With a strong foundation in civil engineering,
-          I've honed my skills in resource management, workflow optimization, and technology
-          integration using tools like advanced Excel, AutoCAD, MATLAB, and MS Project.
-          I also leverage AI-driven solutions to enhance efficiency and enable data-driven
-          decision-making. With a proven track record of delivering projects on time and
-          within budget while fostering team collaboration, I'm open to IT opportunities
-          that allow me to apply my tech-savvy leadership and project management expertise. Let's connect if you're interested in a dynamic coordinator who can drive project success in a fast-paced, innovative environment.
+          Hello there, I'm Ula — a passionate and empathetic Project Manager who brings both structure 
+          and heart to every team I lead. With a strong foundation in construction project management 
+          and a growing portfolio in IT and digital projects, I bridge the gap between people and 
+          technology — making sure both thrive.
         </p>
       </div>
       <Banner />

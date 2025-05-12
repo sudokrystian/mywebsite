@@ -2,7 +2,7 @@ import "./experience.scss";
 // Workplace logos
 import colliers from "../../assets/experience/colliers_logo_clean.png";
 import twojDev from "../../assets/experience/twoj_developer.png";
-import freelancing from "../../assets/experience/freelancing_women.avif";
+import freelancing from "../../assets/experience/freelancing_women.png";
 // Technologies images
 import python from "../../assets/experience/technologies/python.png";
 import typescript from "../../assets/experience/technologies/typescript.png";
