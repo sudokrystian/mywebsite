@@ -1,10 +1,10 @@
 import { useState } from "react";
-import ukulele from "../../assets/my_pictures/chosen/ukulele.jpg";
-import happy from "../../assets/my_pictures/chosen/happy.jpg";
-import mountain from "../../assets/my_pictures/chosen/mountain.jpg";
-import angry from "../../assets/my_pictures/chosen/angry.jpg";
-import lighthouse from "../../assets/my_pictures/chosen/lighthouse_edit.jpg";
-import motorcycle from "../../assets/my_pictures/chosen/motorcycle.jpg";
+import ukulele from "../../assets/my_pictures/chosen/ukulele_1.jpg";
+import happy from "../../assets/my_pictures/chosen/happy_1.jpg";
+import mountain from "../../assets/my_pictures/chosen/mountain_1.jpg";
+import angry from "../../assets/my_pictures/chosen/angry_1.jpg";
+import lighthouse from "../../assets/my_pictures/chosen/lighthouse_edit_1.jpg";
+import motorcycle from "../../assets/my_pictures/chosen/motorcycle_1.jpg";
 import "./Banner.scss";
 
 const Banner = () => {
@@ -15,7 +15,7 @@ const Banner = () => {
     "difficulties show up",
     "work doesn't get done",
     "project turns out to be bigger than expected",
-    "the sprint ends and the ride begins.",
+    "the project ends and the ride begins.",
   ];
 
   const [index, setIndex] = useState<number>(0);
@@ -44,6 +44,7 @@ const Banner = () => {
             <i className="fas fa-angle-left"></i>
           </div>
           <img
+            key={pictures[index]}
             src={pictures[index]}
             className="banner-pic"
             alt="Peace pic"
