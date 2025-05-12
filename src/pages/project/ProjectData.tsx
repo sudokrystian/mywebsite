@@ -21,7 +21,7 @@ export interface ProjectData {
 // This website
 const websiteTitle = "This website";
 
-const websiteTechnologies = ["React", "TypeScript"];
+const websiteTechnologies = ["React", "TypeScript", "SCSS", "git", "CI/CD"];
 
 const websiteDescription = `If you’re here, you’re already checking out one of my personal projects—my website, 
 built for fun and to learn new skills. I designed and implemented every visual and interactive element while 
@@ -49,7 +49,7 @@ const froggersTitle = "Froggers";
 const froggersTechnologies = ["Scrum", "Agile"];
 
 const froggersDescription = `In my first role as an IT Project Manager, I was responsible for overseeing 
-the development of game implemented in unity utilizing .NET. My primary focus was on ensuring the developer adhered to a strict timeline, 
+the development of game implemented in Unity utilizing .NET. My primary focus was on ensuring the developer adhered to a strict timeline, 
 effectively balancing creative exploration with the necessity of prioritizing core tasks. 
 At times, the developer wanted to focus on optimizing algorithms that, while interesting technically, had little impact on the user experience compared to smoother animations or more polished visuals.
 This position 

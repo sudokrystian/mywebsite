@@ -5,6 +5,8 @@ import twojDev from "../../assets/experience/twoj_developer.png";
 import freelancing from "../../assets/experience/freelancing_women.avif";
 // Technologies images
 import python from "../../assets/experience/technologies/python.png";
+import typescript from "../../assets/experience/technologies/typescript.png";
+import javascript from "../../assets/experience/technologies/js.png";
 import react from "../../assets/experience/technologies/react.png";
 import scss from "../../assets/experience/technologies/scss.png";
 import html from "../../assets/experience/technologies/html.png";
@@ -14,6 +16,7 @@ import office from "../../assets/experience/technologies/office.png";
 import matlab from "../../assets/experience/technologies/matlab.png";
 import powerbi from "../../assets/experience/technologies/powerbi.png";
 import agile from "../../assets/experience/technologies/agile.png";
+import waterfall from "../../assets/experience/technologies/waterfall.png";
 
 
 
@@ -43,6 +46,8 @@ const Experience = () => {
           <li>Creativity</li>
           <li>React</li>
           <li>Python</li>
+          <li>TypeScript</li>
+          <li>JavaScript</li>
           <li>HTML, SCSS, CSS</li>
         </ul>
         <div className="job-skills-images">
@@ -50,6 +55,8 @@ const Experience = () => {
           <img src={agile} alt="Agile" />
           <img src={react} alt="react" />
           <img src={python} alt="Python" />
+          <img src={typescript} alt="TypeScript" />
+          <img src={javascript} alt="JavaScript" />
           <img src={html} alt="HTML" />
           <img src={scss} alt="scss" /> 
         </div>
@@ -99,6 +106,7 @@ const Experience = () => {
       <div className="jobskills">
         <ul>
           <li>Scrum</li>
+          <li>Python</li>
           <li>Organizational skills</li>
           <li>Logical thinking</li>
           <li>Responsibility</li>
@@ -110,6 +118,7 @@ const Experience = () => {
         </ul>
         <div className="job-skills-images">
           <img src={scrum} alt="SCRUM" />
+          <img src={python} alt="Python" />
           <img src={powerbi} alt="Power BI" />
           <img src={msproject} alt="MS Project" />
           <img src={html} alt="HTML" />
@@ -142,7 +151,7 @@ const Experience = () => {
       <br />
       <div className="jobskills">
         <ul>
-          <li>Scrum</li>
+          <li>Waterfall</li>
           <li>Quick learner</li>
           <li>Timeliness</li>
           <li>MS Project</li>
@@ -150,7 +159,7 @@ const Experience = () => {
           <li>MATLAB</li>
         </ul>
         <div className="job-skills-images">
-          <img src={scrum} alt="SCRUM" />
+          <img src={waterfall} alt="Waterfall" />
           <img src={msproject} alt="MS Project" />
           <img src={office} alt="MS Office" />
           <img src={matlab} alt="MATLAB" />
