@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ukulele from "../../assets/my_pictures/chosen/ukulele_1.jpg";
+import ukulele from "../../assets/my_pictures/chosen/ukulele_3.jpg";
 import happy from "../../assets/my_pictures/chosen/happy_1.jpg";
 import mountain from "../../assets/my_pictures/chosen/mountain_1.jpg";
 import angry from "../../assets/my_pictures/chosen/angry_1.jpg";
@@ -47,6 +47,7 @@ const Banner = () => {
             key={pictures[index]}
             src={pictures[index]}
             className="banner-pic"
+            id={`banner-${index}`}
             alt="Peace pic"
           />
           <div className="banner-placeholder" onClick={getNextPicture}>

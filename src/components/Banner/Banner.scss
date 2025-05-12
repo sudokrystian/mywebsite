@@ -5,51 +5,87 @@ $image-height: 40vh;
 $padding-banner: 10px;
 $buttons-size: 25px;
 
-.banner-box {
-    background-color: $theme-color;
-    width: 100%;
 
-    .pictures-box {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; 
-        width: 100%;
-        height: $image-height;
-    }
-    
-    .banner-placeholder {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        &:hover {
-            background-color: $highlightes-placeholder;
-            cursor: pointer;
-        } 
-        svg {
-            width: $buttons-size;
-            height: $buttons-size;
-        }
-    }
-}
 
 .banner-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+
+    .banner-box {
+        background-color: $theme-color;
+        width: 100%;
+
+        .pictures-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: $image-height;
+        }
+
+        .banner-placeholder {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: $highlightes-placeholder;
+                cursor: pointer;
+            }
+
+            svg {
+                width: $buttons-size;
+                height: $buttons-size;
+            }
+        }
+
+        .banner-pic {
+            max-width: 70vw;
+            display: block;
+            object-fit: cover;
+            // object-position: 25% center;
+            max-height: $image-height;
+            transition: transform .3s;
+            margin-top: 20px;
+
+            @media (max-width: 648px) {
+
+                /*Mobile View */
+                .banner-pic {
+                    max-width: 50vw;
+                }
+            }
+        }
+    }
+
+    #banner-0 {
+        object-position: 42% center;
+    }
+
+    #banner-1 {
+        object-position: 67% center;
+    }
+
+    #banner-2 {
+        object-position: 54% center;
+    }
+
+    #banner-3 {
+        object-position: 41% center;
+    }
+
+    #banner-4 {
+        object-position: 40% center;
+    }
+
+    #banner-5 {
+        object-position: 40% center;
+    }
 }
-
-
-.banner-pic {
-    max-width: 70vw;
-    display: block;
-    object-fit: cover;
-    max-height: $image-height;  
-    transition: transform .3s;
-    margin-top: 20px;
-}  
 
 .banner-text {
     padding: $padding-banner;
