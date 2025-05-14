@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner/Banner";
 import SkillBox from "../../components/SkillBox/SkillBox";
+import HobbyList from "../../components/Hobby/HobbyList";
 import "./about.scss";
 // Pictures
 import agh from "../../assets/experience/agh_logo.png";
@@ -15,7 +16,7 @@ const About = () => {
   const educationSectionId = "education-div";
   const hobbiesSectionId = "hobbies-div";
 
-  const skills: string[] = [
+  const hardSkills: string[] = [
     "MySQL",
     "Python",
     "Power-BI",
@@ -32,7 +33,7 @@ const About = () => {
     "Tech-savvy",
     "Timeliness",
     "Responsibility",
-  ]; 
+  ];
 
   return (
     <div className="about-div">
@@ -40,9 +41,9 @@ const About = () => {
         <h3 className="about-title">About me</h3>
         <hr />
         <p className="about-introduction">
-          Hello there, I'm Ula — a passionate and empathetic Project Manager who brings both structure 
-          and heart to every team I lead. With a strong foundation in construction project management 
-          and a growing portfolio in IT and digital projects, I bridge the gap between people and 
+          Hello there, I'm Ula — a passionate and empathetic Project Manager who brings both structure
+          and heart to every team I lead. With a strong foundation in construction project management
+          and a growing portfolio in IT and digital projects, I bridge the gap between people and
           technology — making sure both thrive.
         </p>
       </div>
@@ -59,7 +60,7 @@ const About = () => {
               <h3>Hard skills</h3>
             </div>
             <div className="skillboxes-div">
-              {skills.map((skill) => (
+              {hardSkills.map((skill) => (
                 <SkillBox boxText={skill} key={skill} />
               ))}
             </div>
@@ -170,7 +171,6 @@ const About = () => {
             <div className="languageClass-div">
               <p>B2</p>
             </div>
-
           </div>
 
           <div className="languagesmax-div">
@@ -242,26 +242,9 @@ const About = () => {
           therefore I have many hobbies that keep me going. Here is a list of
           some of my favorite ones.
         </p>
-        <ul>
-          <li>Learning new languages</li>
-          <li>
-            Powerlifting (the best way to grow is by overcoming your weaknesses
-            and embracing new opportunities)
-          </li>
-          <li>Psychology</li>
-          <li>Fantasy books</li>
-          <li>
-            Travelling (the main aim for my travels are beautiful hikes in
-            nature and good food)
-          </li>
-          <li>Board games</li>
-          <li>
-            Computer games (strategy and RPG are the best way to run away from
-            brutal reality from time to time)
-          </li>
-        </ul>
+      <HobbyList />
       </div>
-    </div>
+    </div >
   );
 };
 
