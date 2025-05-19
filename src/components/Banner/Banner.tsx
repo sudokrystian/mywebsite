@@ -1,10 +1,10 @@
 import { useState } from "react";
-import ukulele from "../../assets/my_pictures/chosen/ukulele_3.jpg";
-import happy from "../../assets/my_pictures/chosen/happy_1.jpg";
-import mountain from "../../assets/my_pictures/chosen/mountain_1.jpg";
-import angry from "../../assets/my_pictures/chosen/angry_1.jpg";
-import lighthouse from "../../assets/my_pictures/chosen/lighthouse_edit_1.jpg";
-import motorcycle from "../../assets/my_pictures/chosen/motorcycle_1.jpg";
+import ukulele from "../../assets/my_pictures/chosen/ukulele_3.webp";
+import happy from "../../assets/my_pictures/chosen/happy_1.webp";
+import mountain from "../../assets/my_pictures/chosen/mountain_1.webp";
+import angry from "../../assets/my_pictures/chosen/angry_1.webp";
+import lighthouse from "../../assets/my_pictures/chosen/lighthouse_edit_1.webp";
+import motorcycle from "../../assets/my_pictures/chosen/motorcycle_1.webp";
 import "./Banner.scss";
 
 const Banner = () => {
