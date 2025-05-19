@@ -1,6 +1,6 @@
 # 🌐 Ula's Personal Website
 
-Hi there! 👋 I'm Ula — a curious and creative Project Coordinator with a growing passion for tech and development. This personal [website](https://www.ulszka.com) is my space to showcase who I am, what I do, and what I love — from my professional journey to the side projects that keep me inspired.
+Hi there! 👋 I'm Ula — a curious and creative Project Coordinator with a growing passion for tech and development. This personal [website](https://ulszka.com) is my space to showcase who I am, what I do, and what I love — from my professional journey to the side projects that keep me inspired.
 
 ## 💼 About This Website
 
