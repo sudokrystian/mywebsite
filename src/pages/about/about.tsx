@@ -204,14 +204,31 @@ const About = () => {
               className="education-image"
             />
             <div className="education-header">
-              <h6>2018 - 2023</h6>
-              <p>Engineering and Management of Construction Projects,</p>
+              <h6>2021 - 2023</h6>
+              <p>Project Management,</p>
               <p>AGH University of Science and Technology</p>
             </div>
             <ul>
               <li>Managing projects and process optimization</li>
               <li>Analysis using a variety of software</li>
               <li>Solving complex tasks with a range of programs</li>
+            </ul>
+          </div>
+          <div className="education-container">
+            <img
+              src={agh}
+              alt="AGH University of Science and Technology"
+              className="education-image"
+            />
+            <div className="education-header">
+              <h6>2018 - 2021</h6>
+              <p>Civil Engineering,</p>
+              <p>AGH University of Science and Technology</p>
+            </div>
+            <ul>
+              <li>Structural design</li>
+              <li>Construction site organisation</li>
+              <li>Work schedule</li>
             </ul>
           </div>
           <div className="education-container">
