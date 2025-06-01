@@ -105,6 +105,10 @@ const SnakeGame: React.FC = () => {
     setTimeElapsed(0);
   };
 
+  const goBack = () => {
+    window.history.back();
+  };
+
   const renderCells = () => {
     const cells = [];
     for (let y = 0; y < boardSize; y++) {
@@ -126,7 +130,10 @@ const SnakeGame: React.FC = () => {
 
   return (
     <div className="snake-game-container">
-      <h1>Snake Game</h1>
+      <div className="title">
+        <button onClick={goBack}>Back</button>
+        <h2>Snake Game</h2>
+      </div>
       <div className="scoreboard">
         <div>🍎 Score: {score}</div>
         <div>⏱️ Time: {timeElapsed}s</div>
